@@ -1,7 +1,6 @@
-<img style="float: right;" src="https://s3.amazonaws.com/alexa-hackathon/iotweb/img/alexa.png">
-
 ### Alexa Cookbook
 ## Welcome
+<img style="float: right;" src="https://s3.amazonaws.com/alexa-hackathon/iotweb/img/alexa.png">
 <hr />
 
 The cookbook contains a number of individual code samples that show you how to add a new features to an Alexa skill.
