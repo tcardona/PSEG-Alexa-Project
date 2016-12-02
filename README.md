@@ -1,3 +1,15 @@
+| abc | def |
+| --- | --- |
+| 123 | 345 <img style="float: right;" src="https://s3.amazonaws.com/alexa-hackathon/iotweb/img/alexa.png"> |
+
+<hr />
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
 ### Alexa Cookbook
 ## Welcome
 <img style="float: right;" src="https://s3.amazonaws.com/alexa-hackathon/iotweb/img/alexa.png">
