@@ -9,12 +9,16 @@ The remaining projects will assume you are familiar with the process to create a
  and show only the relevant language model and code.
 
 ### Skill code: Create a new Lambda function
-1. Create a new Lambda function called HelloWorld.
+1. Login to the [AWS Console](https://console.aws.amazon.com/lambda/home).
+1. From the top-right, select either region **N. Virginia** or **EU Ireland**.
+1. Click **Create a Lambda function**.
  + Search for a blueprint template called "fact".
  + Select ```alexa-skill-kit-sdk-factskill```
- + Choose your previous Alexa IAM role and complete the wizard.
+ + On the **Configure triggers** page, click in the empty square, and select **Alexa Skills Kit** as the trigger.
+ + On the **Configure function** page, name your function ```HelloWorld```
+ + Choose your previously used Alexa IAM role (such as ```lambda_basic_execution```) and complete the wizard.
 1. Return to your function, click the "code" tab.
-1. Paste in the Javascript code shown below, and click save.
+1. Delete all the code, and paste in the new Javascript code shown below, and click save.
  + This code makes use of the ```alexa-sdk``` which is installed and available when you begin with the fact blueprint.
 
 
@@ -47,12 +51,12 @@ const handlers = {
 
 }
 ```
-Make a note of the skill's ARN, such as ```arn:aws:lambda:us-east-1:123412331234:function:HelloWorld```
+On the top right, notice skill's ARN, such as ```arn:aws:lambda:us-east-1:1234444441234:function:HelloWorld```
 
 ### Skill Configuration
 
 1. Create a new skill on the [Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list).
-1. Call your function ```hello world``` with invocation name ```hello world```.
+1. Call your skill ```hello world``` with invocation name ```hello world```.
 1. Copy and paste the Intent Schema below into the Interaction Model page.
 
 
