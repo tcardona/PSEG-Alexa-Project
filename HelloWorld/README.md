@@ -81,13 +81,14 @@ Click **Next**.
 
 #### Configure Skill Endpoint
 On the Configuration page, Global Fields panel:
+
 1. Choose AWS Lambda ARN and select your default geographic region.
 1. Copy and paste in the ARN string from your HelloWorld function, above.
 1. Click **Next**
 
 ### Test your Skill
-1. On the Test page, you should now have four green checkboxes on the left panel.
-1. Scroll down to the Service Simulator textbox, and type in ```hi```
+1. On the Test page, you should now see four green checkboxes on the left panel.
+1. Scroll down to the Service Simulator textbox, and type in ```hi``` and press Enter.
 1. You should see a block of JSON in the Lambda Response panel.
 1. Click the play button to hear the speech output.
 
