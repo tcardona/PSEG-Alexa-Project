@@ -94,7 +94,7 @@ On the Configuration page, Global Fields panel:
 
  + You can now test this skill on [EchoSim.IO](https://echosim.io) and on your Alexa-enabled device.
  + You do not need to publish your skill to begin testing it on your device.
- + Say out loud: ```open hello world, hi```
+ + Say out loud: ```alexa, open hello world, hi```
 
 
 
