@@ -9,8 +9,6 @@ Alexa skill developers can take advantage of several tools to automate and strea
 
 ### Javascript
 
-### Python
-
 ### Resources
 See [https://developer.amazon.com/ask] for more information
 
