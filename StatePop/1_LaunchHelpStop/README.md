@@ -6,11 +6,12 @@ The skill will say a welcome message, respond to Help and Stop commands, and exp
 
 #### Steps:
 1. Clone or download the entire [Alexa Cookbook](https://github.com/robm26/AlexaCookbook) repository to folder on your laptop.
-2. Navigate into the [1_LaunchHelpStop/src](src) folder.
-3. Notice your project folder now has a folder called `node_modules` and a subfolder called `alexa-sdk`.
-4. Select all the contents of your project folder, and right click to compress into a new Zip archive.
-5. Create a new Lambda function, uploading the Zip archive to the function.
-6. Create a new skill called `state pop` based on the configuration files in the [speechAssets](speechAssets) folder.
+1. Navigate into the [1_LaunchHelpStop/src](src) folder.
+1. Run ```npm install``` which will create your node_modules/alexa-sdk folder.
+1. Notice your project folder now has a folder called `node_modules` and a subfolder called `alexa-sdk`.
+1. Select all the contents of your project folder, and right click to compress into a new Zip archive.
+1. Create a new Lambda function, uploading the Zip archive to the function.
+1. Create a new skill called `state pop` based on the configuration files in the [speechAssets](speechAssets) folder.
 
 #### Test:
   1. Launch the skill by saying "open state pop"
