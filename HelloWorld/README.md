@@ -30,7 +30,7 @@ The remaining projects will assume you are familiar with the process to create a
 
 const Alexa = require('alexa-sdk');
 
-const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
+// const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
 
 exports.handler = function (event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -65,7 +65,7 @@ On the top right, notice skill's ARN, such as ```arn:aws:lambda:us-east-1:123444
 ```
 {
   "intents": [
-  {      "intent": "HelloWorldIntent"    }
+                   { "intent": "HelloWorldIntent" }
   ]
 }
 ```

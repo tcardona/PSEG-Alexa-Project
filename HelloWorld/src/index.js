@@ -3,7 +3,7 @@
 
 const Alexa = require('alexa-sdk');
 
-const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
+// const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
 
 exports.handler = function (event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -19,7 +19,7 @@ const handlers = {
     },
 
     'HelloWorldIntent': function () {
-        this.emit(':tell', 'Hello World!');
+        this.emit(':tell', 'hello world!');
     }
 
 }
