@@ -4,6 +4,8 @@ var Alexa = require('alexa-sdk');
 exports.handler = function(event, context, callback){
 
     var alexa = Alexa.handler(event, context);
+    // alexa.dynamoDBTableName = 'StatePopTable';  // Auto created.  Be sure to add Dynamo to your lambda execution role
+
     alexa.registerHandlers(handlers);
     alexa.execute();
 
@@ -52,7 +54,7 @@ var handlers = {
 
         var stateList  = this.attributes['myList'].toString();  // add array element
         var stateCount =  this.attributes['myList'].length;
-
+""
         var say = 'Your list has the following ' + stateCount + ' states.  ' + stateList;
 
         this.emit(':ask', say, 'try again');

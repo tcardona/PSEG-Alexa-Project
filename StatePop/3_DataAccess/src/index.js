@@ -8,6 +8,8 @@ exports.handler = function(event, context, callback){
 
     var alexa = Alexa.handler(event, context);
     // alexa.appId = "amzn1.echo-sdk-ams.app.8c97fc78-342a-4e4f-823b-e2f91e7f3474";
+    alexa.dynamoDBTableName = 'StatePopTable';  // Auto created.  Be sure to add Dynamo to your lambda execution role
+
     alexa.registerHandlers(handlers);
     alexa.execute();
 
