@@ -19,7 +19,7 @@ const handlers = {
     },
 
     'HelloWorldIntent': function () {
-        this.emit(':tell', 'hello world!');
+        this.emit(':tell', 'hello world with sdk!');
     }
 
 }

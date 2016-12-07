@@ -1,7 +1,7 @@
 
 exports.handler = function( event, context ) {
 
-    var say = "hello world";
+    var say = "hello world from simple lambda";
 
     var response = {
         outputSpeech: {
