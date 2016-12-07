@@ -27,8 +27,8 @@ First time here?  Start with the [intro steps](#intro) below.
 The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
 
 If you are new to Alexa, please click either link below and follow the instructions to create the Fact Skill.
-* blog [bit.ly/alexafact](bit.ly/alexafact)
-* video [bit.ly/alexafactvid](bit.ly/alexafactvid)
+* blog [bit.ly/alexafact](https://bit.ly/alexafact)
+* video [bit.ly/alexafactvid](https://bit.ly/alexafactvid)
 
 ##### Pre-requisites
 Required:
