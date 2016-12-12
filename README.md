@@ -10,14 +10,14 @@ First time here?  Start with the [intro steps](#intro) below.
 
 ### Table of Contents - Ingredients <a id="toc"></a>
 
-1. [Hello World](HelloWorld)
+
+
 1. [Dev Tools](DevTools)
 1. [External Calls](ExternalCalls)
-1. Conversational Responses
-1. Gathering Data
-1. Session Management
+1. Handling Responses
+1. Handling Requests
+1. Handling Session
 1. VUI Design Patterns
-1. Persistence
 1. Analytics
 
 
@@ -27,6 +27,9 @@ First time here?  Start with the [intro steps](#intro) below.
 The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
 
 If you are new to Alexa, please click either link below and follow the instructions to create the Fact Skill.
+ [Hello World](HelloWorld)
+
+
 * blog [bit.ly/alexafact](https://bit.ly/alexafact)
 * video [bit.ly/alexafactvid](https://bit.ly/alexafactvid)
 
