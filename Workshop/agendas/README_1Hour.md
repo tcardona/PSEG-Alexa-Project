@@ -1,6 +1,8 @@
 
+### Alexa Cookbook
+## Agenda - 1 Hour workshop
+<hr />
 
-agenda for this event
-
-link to slides/deck.pdf
+1. Agenda for this event
+1. Links to slides/deck.pdf
 
