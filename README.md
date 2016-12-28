@@ -30,8 +30,11 @@ The lessons assume you have built a skill with the [Alexa Skills Kit](https://de
 If you are new to Alexa, please click either link below and follow the instructions to create the Fact Skill.
 
 ##### Fact Skill
-* blog [bit.ly/alexafact](https://bit.ly/alexafact)
-* video [bit.ly/alexafactvid](https://bit.ly/alexafactvid)
+*  [Tutorial](https://github.com/alexa/skill-sample-nodejs-fact)
+*  [Configuration](https://gist.github.com/robm26/0c3b0d02aeca5d445b1c23bf537f5c58)
+*  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
+
+
 
 ##### Pre-requisites
 Required:
