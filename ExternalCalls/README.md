@@ -7,14 +7,17 @@ Alexa skill developers can take advantage of external APIs and services availabl
 Skill code could perform a lookup in a file or database, or make a REST call to a third-party service, to retrieve information the user requests, or to transmit a message to another user or application.
 
 We can design special functions to simplify the process of sending and receiving data from a service.  The service function will hide all the details of the function call and allow us to simply send and receive data.
+The examples here assume your skill code is written as a Lambda Node.js function.
 
 
+Skill code can use the built-in HTTPS module to make service POST and GET calls.
+See the [HTTPS reference docs](https://nodejs.org/api/https.html).
++ [POST](httpsPost.js)
++ [GET](./httpsGet.js)
 
-Web Services calls
-+ POST
-+ GET
+Skill code can make use of the AWS SDK for Javascript in Node.js.
+See the [AWS SDK reference docs](https://aws.amazon.com/sdk-for-node-js/)
 
-AWS S3 calls
 + Read
 + Write
 
@@ -30,7 +33,8 @@ The language model for State Pop expects the user to say the name of a US State,
 The State name is sent to the external service, and the state's population is returned to the calling code.
 
 
-To create the State Pop sample skill
+Create the State Pop sample skill
+
 1. Create a new skill on the [Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list).
 1. Call your skill ```state pop``` with invocation name ```state pop```.
 1. Copy and paste the Intent Schema below into the Interaction Model page.
@@ -55,12 +59,12 @@ To create the State Pop sample skill
 #### Sample Utterances
 Copy and paste the Sample Utterances into the Interaction Model page.
 ```
-StateRequestIntent tell me about {usstate}
 StateRequestIntent go to {usstate}
+StateRequestIntent tell me about {usstate}
+
 ```
 
 ### Resources
-See [developer.amazon.com/ask](https://developer.amazon.com/ask) for more information
 
 
 Back to the [Home Page](../README.md#title)

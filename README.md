@@ -35,7 +35,7 @@ Required:
 Recommended:
 * Some experience with Javascript or Python programming.
 * Have [Node.JS](https://nodejs.org/en/) on your laptop and become familiar with [NPM](https://www.npmjs.com), the Node Package Manager.
-* Have [GIT](http://www.git.com) on your laptop.
+* Have [GIT](https://git-scm.com/downloads) on your laptop.
 * Review the [alexa-sdk](https://www.npmjs.com/package/alexa-sdk) documentation.
 
 
@@ -49,7 +49,7 @@ If you are new to Alexa, please click the Tutorial link below and follow the ins
 *  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
 
 ##### Setup your Dev Workstation
-*  [](Workshop/DevTools)
+*  [Workshop/DevTools](Workshop/DevTools)
 
 ##### Ready to get cooking?
 
