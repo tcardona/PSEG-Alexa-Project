@@ -1,6 +1,6 @@
 
 ### Alexa Cookbook
-## Ingredients
+## Ingredients <a id="title"></a>
 <hr />
 
 Welcome!
@@ -15,12 +15,14 @@ First time here?  Start with the [intro steps](#intro) below.
 
 ### Ingredient Types <a id="toc"></a>
 
-1. [External Calls](ExternalCalls#intro)
-1. Handling Responses
-1. Handling Requests
-1. Handling Session
-1. VUI Design Patterns
-1. Analytics
+1. [External Calls](ExternalCalls#title)
+1. [Handling Requests](HandlingResponses#title)
+1. [Handling Responses](HandlingRequests#title)
+1. [Handling Session](HandlingSessions#title)
+1. [VUI Design Patterns](Workshop/VUIDesignPatterns#title)
+1. [ControllingScreens](ControllingScreens#title)
+1. [Authentication](Authentication#title)
+1. [Analytics](Analytics#title)
 
 
 ### Intro <a id="intro"></a>
@@ -46,6 +48,8 @@ If you are new to Alexa, please click the Tutorial link below and follow the ins
 *  [Configuration](https://gist.github.com/robm26/0c3b0d02aeca5d445b1c23bf537f5c58)
 *  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
 
+##### Setup your Dev Workstation
+*  [](Workshop/DevTools)
 
 ##### Ready to get cooking?
 

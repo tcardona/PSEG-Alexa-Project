@@ -1,5 +1,5 @@
 #### Alexa Cookbook
-## External Calls
+## External Calls <a id="title"></a>
 <hr />
 
 ### Intro <a id="intro"></a>
@@ -63,5 +63,5 @@ StateRequestIntent go to {usstate}
 See [developer.amazon.com/ask](https://developer.amazon.com/ask) for more information
 
 
-Back to the [Table of Contents](../README.md)
+Back to the [Home Page](../README.md#title)
 
