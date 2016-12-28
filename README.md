@@ -1,18 +1,20 @@
 
 ### Alexa Cookbook
-## Welcome!
+## Ingredients
 <hr />
 
-The cookbook contains a number of individual code samples that show you how to add a new features to an Alexa skill.
-There are broad feature categories outlined below, each with a set of features you can review and add.
+Welcome!
+
+Thes folders contain short code samples that show you how to add features to an Alexa Skill.
+Let's assume we are a chef, with an idea for a fancy new recipe.
+The recipe will require one or more ingredients to be combined to create the finished product.
+Alexa skills follow the same model. Basic ingredients can be added together to create a robust skill.
+
 
 First time here?  Start with the [intro steps](#intro) below.
 
-### Table of Contents - Ingredients <a id="toc"></a>
+### Ingredient Types <a id="toc"></a>
 
-
-
-1. [Dev Tools](DevTools)
 1. [External Calls](ExternalCalls)
 1. Handling Responses
 1. Handling Requests
@@ -25,11 +27,9 @@ First time here?  Start with the [intro steps](#intro) below.
 
 ##### Before starting
 The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
-
 If you are new to Alexa, please click either link below and follow the instructions to create the Fact Skill.
- [Hello World](HelloWorld)
 
-
+##### Fact Skill
 * blog [bit.ly/alexafact](https://bit.ly/alexafact)
 * video [bit.ly/alexafactvid](https://bit.ly/alexafactvid)
 
@@ -42,6 +42,9 @@ Recommended:
 * Have [Node.JS](https://nodejs.org/en/) on your laptop and become familiar with [NPM](https://www.npmjs.com), the Node Package Manager.
 * Have [GIT](http://www.git.com) on your laptop.
 * Review the [alexa-sdk](https://www.npmjs.com/package/alexa-sdk) documentation.
+
+
+1. [Dev Tools](DevTools)
 
 ##### Ready to get cooking?
 
