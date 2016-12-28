@@ -28,21 +28,23 @@ module.exports = {
             });
 
             res.on('end',  () => {
+                // we have now received the raw return data in the returnData variable.
+                // e.g. {"usstate":"Florida","attributes":[{"population":20300000},{"rank":3}]}
+                // We can see it in the log output via:
+                // console.log(JSON.stringify(returnData))
+                // we may need to parse through it to extract the needed data
 
-                callback(returnData);
+
+                var pop = JSON.parse(returnData).attributes[0].population;
+
+
+                callback(pop);
+
 
             });
 
         });
         req.end();
-
-    },
-    httpsGetMock: function(myData, callback) {
-
-        var result = 5000;
-        console.log("received: " + myData + ", returned: " + result);
-
-        callback(result);  // execute the function that the caller passed in
 
     }
 

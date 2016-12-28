@@ -15,7 +15,7 @@ First time here?  Start with the [intro steps](#intro) below.
 
 ### Ingredient Types <a id="toc"></a>
 
-1. [External Calls](ExternalCalls)
+1. [External Calls](ExternalCalls#intro)
 1. Handling Responses
 1. Handling Requests
 1. Handling Session
@@ -24,16 +24,6 @@ First time here?  Start with the [intro steps](#intro) below.
 
 
 ### Intro <a id="intro"></a>
-
-##### Before starting
-The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
-If you are new to Alexa, please click either link below and follow the instructions to create the Fact Skill.
-
-##### Fact Skill
-*  [Tutorial](https://github.com/alexa/skill-sample-nodejs-fact)
-*  [Configuration](https://gist.github.com/robm26/0c3b0d02aeca5d445b1c23bf537f5c58)
-*  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
-
 
 
 ##### Pre-requisites
@@ -47,7 +37,15 @@ Recommended:
 * Review the [alexa-sdk](https://www.npmjs.com/package/alexa-sdk) documentation.
 
 
-1. [Dev Tools](DevTools)
+##### Before starting
+The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
+If you are new to Alexa, please click the Tutorial link below and follow the instructions to create the Fact Skill.
+
+##### Fact Skill
+*  [Tutorial](https://github.com/alexa/skill-sample-nodejs-fact)
+*  [Configuration](https://gist.github.com/robm26/0c3b0d02aeca5d445b1c23bf537f5c58)
+*  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
+
 
 ##### Ready to get cooking?
 
