@@ -3,7 +3,7 @@
 //
 
 var Alexa = require('alexa-sdk');
-var MymockGet = require("../mockGet.js");
+var MymockGet = require("../mockGet.js");  // adjust to match your project folder structure
 
 exports.handler = function(event, context, callback){
 
