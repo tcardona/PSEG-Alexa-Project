@@ -12,26 +12,27 @@
 ### Steps
 #### Code
 1. Create a new AWS Lambda function called HelloWorld
-1. Be sure to use the N. Virginia Region and add the trigger *Alexa Skills Kit*
+  * Be sure to use the N. Virginia Region and add the trigger *Alexa Skills Kit*
 1. Paste in the source code from [src/index.js](./src/index.js) :
-```
-exports.handler = function( event, context ) {
+    ```
+    exports.handler = function( event, context ) {
 
-    var say = "Hello World";
+        var say = "Hello World";
 
-    var response = {
-        outputSpeech: {
-            type: "SSML",
-            ssml: "<speak>" + say + "</speak>"
-        },
-        shouldEndSession: true
+        var response = {
+            outputSpeech: {
+                type: "SSML",
+                ssml: "<speak>" + say + "</speak>"
+            },
+            shouldEndSession: true
+        };
+
+        context.succeed( { response: response } );
     };
-
-    context.succeed( { response: response } );
-};
-```
-1. Create or re-use an execution role, such as ```lambda_basic_execution```
-1. Make note of the Lambda ARN, shown near the top right, such as ```arn:aws:lambda:us-east-1:333304287777:function:HelloWorld```
+    ```
+1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
+1. Make note of the Lambda ARN, shown near the top right, such as
+```arn:aws:lambda:us-east-1:333304287777:function:HelloWorld```
 
 
 #### Skill
