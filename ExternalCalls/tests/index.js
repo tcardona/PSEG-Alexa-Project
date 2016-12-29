@@ -3,6 +3,7 @@
 //
 
 var Alexa = require('alexa-sdk');
+var MymockGet = require("../mockGet.js");
 
 exports.handler = function(event, context, callback){
 
@@ -22,7 +23,18 @@ var handlers = {
         var myState = this.event.request.intent.slots.usstate.value;
 
         var say = 'You asked for ' + myState;
-        this.emit(':ask', say, 'try again');
+
+        MymockGet.mockGet(myState,  myResult => {
+                console.log("sent     : " + myState);
+                console.log("received : " + myResult);
+
+                say = say + " and the population is " + myResult;
+
+                this.emit(':ask', say, 'try again');
+
+            }
+        );
+
     },
 
     'AMAZON.HelpIntent': function () {
