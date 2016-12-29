@@ -27,9 +27,10 @@ See the [AWS SDK reference docs](https://aws.amazon.com/sdk-for-node-js/).
 
 
 ### Testing
-These function modules are designed to simplify and streamline the interface between your code and the external services.
-The functions can be tested from your local Node.js command line.
-For details, see the [test](test#title) sub project.
+These function modules can be tested by adding them to an existing skill, or individually via your local command line.
+
+
+For details, see the [TEST](tests#title) project folder.
 
 
 Back to the [Home Page](../README.md#title)
