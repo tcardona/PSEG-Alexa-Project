@@ -18,7 +18,7 @@
 1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
     ```
-    exports.handler = function( event, context ) {
+    exports.handler = function( event, context, callback ) {
 
         var say = "Hello World";
 
@@ -30,7 +30,8 @@
             shouldEndSession: true
         };
 
-        context.succeed( { response: response } );
+        callback(null, { response: response });
+
     };
     ```
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```

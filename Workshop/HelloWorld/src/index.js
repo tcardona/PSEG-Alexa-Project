@@ -1,5 +1,5 @@
 
-exports.handler = function( event, context ) {
+exports.handler = function( event, context, callback ) {
 
     var say = "Hello World";
 
@@ -11,8 +11,7 @@ exports.handler = function( event, context ) {
         shouldEndSession: true
     };
 
-
-    context.succeed( { response: response } );
+    callback(null, { response: response });
 
 };
 
