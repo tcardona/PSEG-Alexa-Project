@@ -7,12 +7,15 @@
 
 ### This is a simple tutorial to introduce the simplest possible Alexa skill and code.
 #### Pre-requisites:
- * Accounts on [AWS.Amazon.com] and [Developer.Amazon.com]
+ * Accounts on [AWS.Amazon.com](https://aws.amazon.com/) and [Developer.Amazon.com](https://developer.amazon.com/)
 
-### Steps
+### Tutorial Steps
 #### Code
-1. Create a new AWS Lambda function called HelloWorld
-  * Be sure to use the N. Virginia Region and add the trigger *Alexa Skills Kit*
+1. Login to AWS and verify the region at the top right is set to the **N. Virginia** Region (not Oregon)
+1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**
+1. Choose the Blank Function blueprint
+1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
+1. Give youf function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
     ```
     exports.handler = function( event, context ) {
@@ -31,6 +34,7 @@
     };
     ```
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
+1. Click Next and create the function.
 1. Make note of the Lambda ARN, shown near the top right, such as
 ```arn:aws:lambda:us-east-1:333304287777:function:HelloWorld```
 
