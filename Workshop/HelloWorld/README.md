@@ -40,9 +40,19 @@
 
 
 #### Skill
-1. Create a new Skill called HelloWorld with invocation name "hello world".
-1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json)
-1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt).
+1. Create a new Skill called HelloWorld with invocation name ```hello world```.
+1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
+    ```
+    {
+      "intents": [
+        { "intent": "MyIntent" }
+      ]
+    }
+    ```
+1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
+    ```
+    MyIntent hello
+    ```
 1. Configure your skill with the Lambda ARN previously created.
 
 #### Test
