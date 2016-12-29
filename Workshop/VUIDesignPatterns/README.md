@@ -30,6 +30,7 @@ The VUI designer should anticipate the types of utterances the user will say, an
 
 Please read more in the article: [Custom Slot is the Literal Solution](https://developer.amazon.com/blogs/post/Tx3IHSFQSUF3RQP/Why-a-Custom-Slot-is-the-Literal-Solution)
 
+
 Graph vs Frame
 
 
