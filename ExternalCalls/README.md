@@ -8,22 +8,22 @@ Skill code could perform a lookup in a file or database, or make a REST call to 
 
 We can design special functions to simplify the process of sending and receiving data from a service.  The service function will hide all the details of the function call and allow us to simply send and receive data.
 The examples here assume your skill code is written as a Lambda Node.js function.
+A series of individual functions is provided.  You can "require" these in your main code file.  For details, see [Node.js modules docs](https://nodejs.org/api/modules.html)
 
 
+
+
+### Functions
 Skill code can use the built-in HTTPS module to make service POST and GET calls.
 See the [HTTPS reference docs](https://nodejs.org/api/https.html).
-+ [POST](httpsPost.js)
-+ [GET](./httpsGet.js)
++ [POST sample function](httpsPost.js)
++ [GET sample function](httpsGet.js)
 
-Skill code can make use of the AWS SDK for Javascript in Node.js.
+
+Skill code can make use of the AWS SDK for Javascript in Node.js.  This Node module is automatically included and available to AWS Lambda functions.
 See the [AWS SDK reference docs](https://aws.amazon.com/sdk-for-node-js/)
-
-+ Read
-+ Write
-
-### Code
-
-#### Javascript
++ [S3 file read sample function](s3fileRead.js)
++ [S3 file write sample function](s3fileWrite.js)
 
 
 ### Skill Configuration
