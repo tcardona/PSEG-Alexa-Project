@@ -54,7 +54,7 @@
     ```
     MyIntent hello
     ```
-1. Configure your skill with the Lambda ARN previously created.
+1. Configure the skill endpoint with the AWS Lambda ARN previously created.
 
 #### Test
 * Say "open hello world" and Alexa should reply with "hello world"

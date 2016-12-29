@@ -33,5 +33,5 @@ Download, print, and fill out a design worksheet to capture your Intent, Slot va
 See [developer.amazon.com/ask](https://developer.amazon.com/ask) for more information
 
 
-Back to the [Table of Contents](../README.md)
+Back to the [Workshop](../README.md#title)
 
