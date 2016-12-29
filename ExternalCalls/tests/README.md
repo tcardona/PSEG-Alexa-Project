@@ -1,5 +1,5 @@
 #### Alexa Cookbook
-## External Calls
+## External Calls Testing <a id="title"></a>
 <hr />
 
 ### Intro
@@ -39,3 +39,46 @@ Once you have the mock function working, it will be easy to swap it out for the 
 
 
 
+### Test Skill
+
+Another way to test the functions is via a sample skill called State Pop.
+The language model for State Pop expects the user to say the name of a US State, such as Florida.
+The State name can then be sent to one of the external service functions, and the state's population is returned to the calling code.
+
+
+#### Create the State Pop sample skill
+
+1. Create a new skill on the [Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list).
+1. Call your skill ```state pop``` with invocation name ```state pop```.
+1. Copy and paste the Intent Schema below into the Interaction Model page.
+
+#### Intent Schema
+
+```
+{
+  "intents": [
+  {      "intent": "StateRequestIntent"
+      "slots":[
+              {
+                "name":"usstate",
+                "type":"AMAZON.US_STATE"
+              }
+            ]
+      }
+  ]
+}
+```
+
+#### Sample Utterances
+Copy and paste the Sample Utterances into the Interaction Model page.
+```
+StateRequestIntent go to {usstate}
+StateRequestIntent tell me about {usstate}
+
+```
+
+#### Code
+Paste in the code from [index.js](index.js)
+
+
+Back to [ExternalCalls](../README.md#title)
