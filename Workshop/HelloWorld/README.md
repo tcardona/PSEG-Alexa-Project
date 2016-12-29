@@ -15,7 +15,7 @@
 1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**
 1. Choose the Blank Function blueprint
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
-1. Give youf function the name *HelloWorld*
+1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
     ```
     exports.handler = function( event, context ) {
