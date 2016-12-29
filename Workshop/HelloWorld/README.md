@@ -36,7 +36,7 @@
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
 1. Click Next and create the function.
 1. Make note of the Lambda ARN, shown near the top right, such as
-```arn:aws:lambda:us-east-1:333304287777:function:HelloWorld```
+``` arn:aws:lambda:us-east-1:333304287777:function:HelloWorld ```
 
 
 #### Skill
