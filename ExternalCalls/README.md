@@ -25,10 +25,10 @@ See the [AWS SDK reference docs](https://aws.amazon.com/sdk-for-node-js/).
 + [S3 file read sample function](s3fileRead.js)
 + [S3 file write sample function](s3fileWrite.js)
 
-*Lambda functions that call out to other AWS services require additional permissions, beyond the default Lambda Basic Execution.
- [Read more about Lambda IAM Roles & Policies](http://docs.aws.amazon.com/lambda/latest/dg/with-userapp-walkthrough-custom-events-create-iam-role.html)
+*Lambda functions that call out to other AWS services such as S3 require additional permissions, beyond those in the default Lambda Basic Execution role.
+ [Read more about Lambda IAM Roles & Policies](http://docs.aws.amazon.com/lambda/latest/dg/with-userapp-walkthrough-custom-events-create-iam-role.html),
  or add policy permissions to your role in the [IAM Role Console](https://console.aws.amazon.com/iam/home?roles#/home)*
- 
+
 ### Testing
 These function modules can be tested by adding them to an existing skill, or individually via your local command line.
 
