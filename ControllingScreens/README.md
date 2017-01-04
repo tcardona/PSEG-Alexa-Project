@@ -6,7 +6,7 @@
 The Amazon Echo is designed to be a voice-first experience.  Alexa operates as a cloud-based service and has limited support for interacting with screen devices, such as phones, tablets, and computers.
 Developers may return a "card" along with each spoken response, which is a short block of lightly formatted static content displayed on the Alexa mobile app, or alexa.amazon.com page.
 
-### IOT Push
+### [IOT Push](IOT#title)
 One feature of the [AWS IOT](https://aws.amazon.com/iot/) (Internet of Things) service the ability to send data to a device.  An Alexa Skill developer can make calls from Lambda to update the state of IOT-connected devices.
 
 ### IOT MQTT Client
