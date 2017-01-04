@@ -9,14 +9,18 @@ Developers may return a "card" along with each spoken response, which is a short
 ### IOT Push
 One feature of the [AWS IOT](https://aws.amazon.com/iot/) (Internet of Things) service the ability to send data to a device.  An Alexa Skill developer can make calls from Lambda to update the state of IOT-connected devices.
 
+### IOT MQTT Client
+Devices with visual displays can be configured to receive messages from Alexa Skills.  An effective way to accomplish this is to configure the device to act as an IOT Device, using MQTT client code.  Virtual devices, even those behind a firewall, can then start up and establish a web-socket connection to the IOT MQTT network.  An Alexa skill that calls IOT to update the device state will generate an update message within the running client.  The client developer can then use this data to update the screen.
 
-### Web
-Web applications that use javascript can load the AWS SDK into the browser, and directly call AWS services.  A web app can register itself as an IOT Device, and be directly updated from Alexa skill code that calls the AWS IOT *update device shadow* function.
-In this way, web applications can provide a rich visual experience to compliment the voice user interface of an Alexa skill.
+#### Web
+Web applications that use javascript can load the AWS SDK into the browser, and directly call AWS services.
+So-called *single page web apps* can receive and process, and format data from an Alexa skill into visual elements on the browser.
+The user may see a menu of options, or a history of previous intents, when watching a web app that is synchronized with an Alexa skill.
 
-### Mobile
+#### Mobile
 
-### VR
+
+#### VR
 
 
 
