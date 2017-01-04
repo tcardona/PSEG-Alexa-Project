@@ -39,7 +39,7 @@ Recommended:
 * Review the [alexa-sdk](https://www.npmjs.com/package/alexa-sdk) documentation.
 
 
-##### Before starting
+#### Before starting
 The lessons assume you have built a skill with the [Alexa Skills Kit](https://developer.amazon.com/ask) .
 If you are new to Alexa, please click the Tutorial link below and follow the instructions to create the Fact Skill.
 
@@ -48,7 +48,7 @@ If you are new to Alexa, please click the Tutorial link below and follow the ins
 *  [Configuration](https://gist.github.com/robm26/0c3b0d02aeca5d445b1c23bf537f5c58)
 *  [Lambda Function](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/configure-triggers?bp=alexa-skill-kit-sdk-factskill)
 
-##### Setup your Dev Workstation
+##### Setup your Dev Workstation - optional
 *  [Workshop/DevTools](Workshop/DevTools)
 
 ##### Ready to get cooking?

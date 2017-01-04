@@ -8,7 +8,7 @@ Skill code could perform a lookup in a file or database, or make a REST call to 
 
 We can design special functions to simplify the process of sending and receiving data from a service.  The service function will hide all the details of the function call and allow us to simply send and receive data.
 The examples here assume your skill code is written as a Lambda Node.js function.
-A series of individual functions is provided.  You can "require" these in your main code file.  For details, see [Node.js modules docs](https://nodejs.org/api/modules.html)
+A series of individual functions is provided.  You can copy and paste the code, or add the individual source files to your project with the "require" directive within your main code file.  For details on "require", see [Node.js modules docs](https://nodejs.org/api/modules.html)
 
 
 
@@ -25,7 +25,10 @@ See the [AWS SDK reference docs](https://aws.amazon.com/sdk-for-node-js/).
 + [S3 file read sample function](s3fileRead.js)
 + [S3 file write sample function](s3fileWrite.js)
 
-
+*Lambda functions that call out to other AWS services require additional permissions, beyond the default Lambda Basic Execution.
+ [Read more about Lambda IAM Roles & Policies](http://docs.aws.amazon.com/lambda/latest/dg/with-userapp-walkthrough-custom-events-create-iam-role.html)
+ or add policy permissions to your role in the [IAM Role Console](https://console.aws.amazon.com/iam/home?roles#/home)*
+ 
 ### Testing
 These function modules can be tested by adding them to an existing skill, or individually via your local command line.
 
