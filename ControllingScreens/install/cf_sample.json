@@ -85,7 +85,46 @@
         "Action": "lambda:InvokeFunction",
         "Principal": "alexa-appkit.amazon.com"
       }
+    },
+
+
+    "tableyesno": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "id",
+            "AttributeType": "N"
+          }
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+          }
+        ],
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": "2",
+          "WriteCapacityUnits": "2"
+        }
+      }
+    },
+    "s3alexabucket7": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "AccessControl": "Private",
+        "LoggingConfiguration": {
+          "DestinationBucketName": "access-log-do-not-delete-313304289684-us-standard",
+          "LogFilePrefix": "infosec-enforced-access-log-do-not-delete/"
+        },
+        "VersioningConfiguration": {
+          "Status": "Suspended"
+        }
+      }
     }
+
+
+
   },
     "Outputs": {
 
