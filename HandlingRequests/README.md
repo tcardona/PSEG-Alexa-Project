@@ -1,3 +1,7 @@
+### Alexa Cookbook
+## Handling Requests <a id="title"></a>
+<hr />
+
 Locale Detection - respond in same Locale language
 See Fact language
 
@@ -23,4 +27,8 @@ See slotSample code
 Form filler (includes slot elicitation, isSlotValid)
 Determine missing slots;  For any that are NULL:
 Say "what is your destination", "tell me where you are going", pick a random one
+
+<hr />
+
+Back to the [Home Page](../README.md#title)
 
