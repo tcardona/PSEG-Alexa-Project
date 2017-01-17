@@ -1,19 +1,18 @@
+var Alexa = require('alexa-sdk');
 
-exports.handler = function( event, context, callback ) {
-
-    var say = "Hello World";
-
-    var response = {
-        outputSpeech: {
-            type: "SSML",
-            ssml: "<speak>" + say + "</speak>"
-        },
-        shouldEndSession: true
-    };
-
-    callback(null, { response: response });
-
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+    alexa.registerHandlers(handlers);
+    alexa.execute();
 };
 
+var handlers = {
+    'LaunchRequest': function () {
+        this.emit('HelloWorldIntent');
+    },
 
+    'HelloWorldIntent': function () {
+        this.emit(':tell', 'Hello World!');
+    }
+};
 
