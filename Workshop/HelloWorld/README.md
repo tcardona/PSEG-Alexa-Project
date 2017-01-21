@@ -13,7 +13,7 @@
 #### Code
 1. Login to AWS and verify the region at the top right is set to the **N. Virginia** Region (not Oregon)
 1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**
-1. Choose the ```alexa-skill-kit-sdk-factskill``` skill template (search for *fact*.
+1. Choose the ```alexa-skill-kit-sdk-factskill``` skill template (hint: search for **fact** )
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
 1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
