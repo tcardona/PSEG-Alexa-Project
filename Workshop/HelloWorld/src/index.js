@@ -8,10 +8,10 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('HelloWorldIntent');
+        this.emit('MyIntent');
     },
 
-    'HelloWorldIntent': function () {
+    'MyIntent': function () {
         this.emit(':tell', 'Hello World!');
     }
 };

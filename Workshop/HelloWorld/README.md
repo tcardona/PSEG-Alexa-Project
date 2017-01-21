@@ -13,26 +13,28 @@
 #### Code
 1. Login to AWS and verify the region at the top right is set to the **N. Virginia** Region (not Oregon)
 1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**
-1. Choose the Blank Function blueprint
+1. Choose the ```alexa-skill-kit-sdk-factskill``` skill template (search for *fact*.
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
 1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
     ```
-    exports.handler = function( event, context, callback ) {
+        var Alexa = require('alexa-sdk');
 
-        var say = "Hello World";
-
-        var response = {
-            outputSpeech: {
-                type: "SSML",
-                ssml: "<speak>" + say + "</speak>"
-            },
-            shouldEndSession: true
+        exports.handler = function(event, context, callback) {
+            var alexa = Alexa.handler(event, context);
+            alexa.registerHandlers(handlers);
+            alexa.execute();
         };
 
-        callback(null, { response: response });
+        var handlers = {
+            'LaunchRequest': function () {
+                this.emit('MyIntent');
+            },
 
-    };
+            'MyIntent': function () {
+                this.emit(':tell', 'Hello World!');
+            }
+        };
     ```
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
 1. Click Next and create the function.
