@@ -1,0 +1,3 @@
+StateRequestIntent {usstate}
+StateRequestIntent go to {usstate}
+StateRequestIntent tell me about {usstate}
