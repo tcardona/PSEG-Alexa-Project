@@ -7,7 +7,7 @@
 - Using the Alexa SDK for Node.js
 
 **12:30-1:00p** 
-Lunch
+Working Lunch
 
 **1:00p-3:00p**
 - Session Attributes & persistence
@@ -20,3 +20,30 @@ Lunch
 - Open Hacking/Demos/Questions
 
 ## Day 2
+
+**9-12:30**
+- Intro to Alexa Skills Kit
+- Hands-on: Build your first Alexa Skill
+- Intents and Slots
+- Using the Alexa SDK for Node.js
+
+**12:30-1:00p** 
+Working Lunch
+
+**1:00p-3:00p**
+- Session Attributes & persistence
+- Account Linking
+- Connecting to external APIs
+- Connecting to AWS Services
+
+**3:00-4:30p**
+- Open Hacking/Demos/Questions
+
+## More Stuff to include somewhere
+- Changing Alexa’s inflection with SSML
+- Sending images through home cards- 
+- Audio Streaming in skills
+- Testing Lambda functions locally with “lambda-local” node module. 
+- VUI Design
+- Internationalization
+- Publishing your skill
