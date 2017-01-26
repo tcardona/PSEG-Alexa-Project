@@ -14,6 +14,7 @@ Working Lunch
 - VUI Design
 - Internationalization
 - Publishing your skill
+- Customizing audio output (SSML)
 
 **3:00-4:30p**
 - Smart Home/IoT
@@ -35,16 +36,8 @@ Working Lunch
 - Account Linking
 - Connecting to external APIs
 - Connecting to AWS Services
+- Publishing your skill
 
 **4:00p-5:00p**
 - Pizza/beers
 - Open Hacking/Demos/Questions
-
-## More Stuff to include somewhere
-- Changing Alexa’s inflection with SSML
-- Sending images through home cards- 
-- Audio Streaming in skills
-- Testing Lambda functions locally with “lambda-local” node module. 
-- VUI Design
-- Internationalization
-- Publishing your skill
