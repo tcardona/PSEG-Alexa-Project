@@ -38,9 +38,7 @@ Working Lunch
 
 **4:00p-5:00p**
 - Pizza/beers
-- Demo your skill
 - Open Hacking/Demos/Questions
-
 
 ## More Stuff to include somewhere
 - Changing Alexa’s inflection with SSML
