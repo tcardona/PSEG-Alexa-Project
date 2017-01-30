@@ -5,10 +5,10 @@
 
 Welcome!
 
-This folders contain short code samples that show you how to add features to an Alexa Skill.
+These folders contain short code samples that show you how to add features to an Alexa Skill.
 Let's assume we are a chef, with an idea for a fancy new recipe.
 The recipe will require one or more ingredients to be combined to create the finished product.
-Alexa skills follow the same model. Basic ingredients can be added together to create a robust skill.
+Alexa skills follow the same model. Basic ingredients can be added together to create a robust skill.  This guide is a
 
 
 First time here?  Start with the [intro steps](#intro) below.
