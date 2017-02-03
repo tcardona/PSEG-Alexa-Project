@@ -5,7 +5,7 @@
 // 1. From the AWS console, click on IAM
 // 2. Locate and click on the role you use with your Lambda functions, such as "lambda_basic_execution"
 // 3. Click the "Attach Policy" button
-// 4. For a quick demo, on "ses" and attach the AmazonSESFullAccess policy.
+// 4. For a quick demo, filter on "ses" and attach the AmazonSESFullAccess policy.
 // 5. For a production scenario, choose a more fine-grained policy granting access to certain resources.
 //    Review http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html
 // 6. SES email recipients must opt-in before receiving further emails from SES
