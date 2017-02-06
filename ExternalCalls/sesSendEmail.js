@@ -30,7 +30,7 @@ sendMessage(params, callback=>{
     console.log('sending message to ' + params.Destination.ToAddresses.toString() + ', status: ' );
     var say = 'sent the msg';
 
-    this.emit(':ask', say, 'try again');
+    // this.emit(':ask', say, 'try again');
 
 });
 
@@ -43,7 +43,7 @@ sendMessage(params, callback=>{
 function sendMessage(params, callback) {
 
     var AWS = require('aws-sdk');
-    // AWS.config.loadFromPath('./awsconfig.json');
+    AWS.config.loadFromPath('./awsconfig.json');
 
     var SES = new AWS.SES();
 

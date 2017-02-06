@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexa Angular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.18.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <style>
+        .main  {  background-color: gainsboro;
+                    width: 390px;
+                    margin: 0 auto;
+                    text-align:center;
+                    font-family:Arial;
+                    font-size:12pt;
+                    color:grey;
+                    padding:8px;
+
+                }
+
+        .otheranswer { cursor:pointer; font-size:12pt; color:dimgray }
+        .yes {  background-color:forestgreen; color:white; font-family:Arial; font-size:16pt; width:120px; text-align: center; height:100px; cursor:pointer }
+        .notsure {  background-color:grey; color:white; font-family:Arial; font-size:16pt;  width:120px; text-align: center; cursor:pointer }
+        .no {  background-color:red; color:white; font-family:Arial; font-size:16pt;  width:120px; text-align: center; cursor:pointer }
+        .inputcell { height:20px; }
+        .inputbox { font-family:Arial; font-size:14pt; width:360px; }
+        .inputbutton {font-family:Arial; font-size:14pt; }
+
+        .savedanswer {color:black; background-color:gainsboro; padding:5px; width:200px; float:right }
+
+
+        .magictable {  background-color: whitesmoke; }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+    </style>
+    <script>
+
+        var docClient;
+        var cognitoIdentityPoolID =   "us-east-1:861f79c1-9085-4e99-b8ce-a9c8d52fca34";
+
+        // Login to AWS Cognito, and create your own Federated Itentity Pool.
+        // It created two new IAM Roles.  Edit the Unauthenticated Pool role, and attach Dynamo policy
+
+        // A sample Pool ID is   "us-east-1:e19c31b7-b092-42b4-8d77-2b7939115700";
+
+        const REGION   = 'us-east-1';
+
+        function test1() {
+             // alert('hello, ' + person.age);
+             // document.getElementById('fn').value = 'Leah';
+            change();
+
+        }
+
+        var person = {
+            age: 18
+        };
+
+        function change() {
+            var appElement = document.querySelector('[ng-app=myApp]');
+            var $scope = angular.element(appElement).scope();
+            $scope.$apply(function() {
+                $scope.lastName = {"kitchen":"danielle"};
+            });
+        }
+
+    </script>
+</head>
+<body onLoad="">
+
+<div id="main" class="main">
+
+    <div ng-app="myApp" ng-controller="personCtrl">
+
+        First Name: <input type="text" ng-model="firstName" id="fn"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{fullName()}}
+
+    </div>
+
+    <div id="debug" >
+        123
+    </div>
+
+    <br />
+    <input type="button" id="ang1" value="test1()" onClick="test1();" />
+
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('personCtrl', function($scope) {
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+            $scope.fullName = function() {
+                return $scope.firstName + " " + $scope.lastName;
+            };
+        });
+
+    </script>
+
+</div>
+
+</body>
+</html>
