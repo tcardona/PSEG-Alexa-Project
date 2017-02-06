@@ -96,8 +96,8 @@ This lab will have you add Intents with Slots.
 
 1. Add a new Intent such as MyNameIsIntent.  Define a slot with the intent.
 Your Intent should look like this:
-
-```   {
+```
+{
       "intent": "MyNameIsIntent",
       "slots":[
         {
