@@ -96,6 +96,7 @@ This lab will have you add Intents with Slots.
 
 1. Add a new Intent such as MyNameIsIntent.  Define a slot with the intent.
 Your Intent should look like this:
+
 ```   {
       "intent": "MyNameIsIntent",
       "slots":[
@@ -106,6 +107,7 @@ Your Intent should look like this:
       ]
     }
 ```
+
 2. Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
 
 ```var myName = event.request.intent.slots.firstname.value;```
@@ -116,6 +118,8 @@ Your Intent should look like this:
 ## Lab 3
 
 Add short MP3 audio clips to your output via SSML.
+Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
+
 
  There is a three second pause here <break time="3s"/>  then the speech continues.
 
