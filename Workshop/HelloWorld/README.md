@@ -48,7 +48,7 @@
     ```
     {
       "intents": [
-        { "intent": "MyIntent" }
+        { "intent": "MyIntent" ,  "slots":[] }
       ]
     }
     ```
@@ -62,6 +62,21 @@
 * Say "open hello world" and Alexa should reply with "hello world"
 * Modify code within the Lambda function editor to have Alexa say something besides Hello World.
 * Test and hear Alexa say the new response.
+
+#### Lab
+This lab will have you extend your skill by adding new Intents.  First we will add the intent to the skill definition.
+1. Within your skill definition on [developer.amazon.com], click on the Interaction Model page.
+1. Review the Intent Schema panel, notice the three lines that define the MyIntent schema.
+1. Create a new intent definition, similar to MyIntent called WhatsUpIntent
+1. Within the Sample Utterances box, add a sample for the new intent, such as ```WhatsUpIntent what is up```
+
+Next, we will add a handler to the AWS Lambda function
+1. Within the [AWS Lambda Console](https://console.aws.amazon.com/lambda/home) console, review your function code
+1. Within the handlers section, notice the three lines of code that handle the MyIntent event.
+1. Create a new handler for the WhatsUpIntent (hint: copy & paste the MyIntent block and change MyIntent to WhatsUpIntent)
+1. Customize the message Alexa will say
+1. Change the emit from a ":tell" to an ":ask"
+1. Test your new skill by opening the skill and saying "what is up"
 
 
 

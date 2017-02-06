@@ -23,7 +23,6 @@ module.exports = {
                 'Content-Length': Buffer.byteLength(JSON.stringify(post_data))
             }
         };
-        console.log('about to POST!');
 
         var post_req = https.request(post_options, res => {
             res.setEncoding('utf8');
@@ -33,9 +32,6 @@ module.exports = {
             });
             res.on('end', () => {
                 // this API returns a JSON structure
-                console.log('POSTED');
-                console.log(returnData);
-                console.log('');
 
                 population = JSON.parse(returnData).population;
 

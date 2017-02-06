@@ -35,7 +35,7 @@ var handlers = {
 
          // CallAPIs.getPopMock(myState, pop => {
         // CallAPIs.getPopFromArray(myState, pop => {
-        CallAPIs.getPopFromAPI_POST(myState, pop => {
+        CallAPIs.getPopFromAPI_GET(myState, pop => {
 
             say = 'The population of ' + myState + ' is ' + pop;
 
