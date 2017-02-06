@@ -5,7 +5,7 @@
 ### Intro <a id="intro"></a>
 
 
-### This is a simple tutorial to introduce the simplest possible Alexa skill and code.
+### This is a simple tutorial to introduce a simple Alexa skill and code.
 #### Pre-requisites:
  * Accounts on [AWS.Amazon.com](https://aws.amazon.com/) and [Developer.Amazon.com](https://developer.amazon.com/)
 
@@ -32,7 +32,7 @@
             },
 
             'MyIntent': function () {
-                this.emit(':tell', 'Hello World!');
+                this.emit(':tell', 'Hello World from Alexa!');
             }
         };
     ```
@@ -43,6 +43,7 @@
 
 
 #### Skill
+1. Login to [developer.amazon.com] and click Alexa, then Alexa Skills Kit
 1. Create a new Skill called HelloWorld with invocation name ```hello world```.
 1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
     ```
@@ -59,18 +60,20 @@
 1. Configure the skill endpoint with the AWS Lambda ARN previously created.
 
 #### Test
-* Say "open hello world" and Alexa should reply with "hello world"
+* Type or say "open hello world" and Alexa should reply with "hello world from Alexa"
 * Modify code within the Lambda function editor to have Alexa say something besides Hello World.
 * Test and hear Alexa say the new response.
 
 #### Lab
 This lab will have you extend your skill by adding new Intents.  First we will add the intent to the skill definition.
+
 1. Within your skill definition on [developer.amazon.com], click on the Interaction Model page.
 1. Review the Intent Schema panel, notice the three lines that define the MyIntent schema.
 1. Create a new intent definition, similar to MyIntent called WhatsUpIntent
 1. Within the Sample Utterances box, add a sample for the new intent, such as ```WhatsUpIntent what is up```
 
 Next, we will add a handler to the AWS Lambda function
+
 1. Within the [AWS Lambda Console](https://console.aws.amazon.com/lambda/home) console, review your function code
 1. Within the handlers section, notice the three lines of code that handle the MyIntent event.
 1. Create a new handler for the WhatsUpIntent (hint: copy & paste the MyIntent block and change MyIntent to WhatsUpIntent)

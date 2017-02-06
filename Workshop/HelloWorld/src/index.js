@@ -28,7 +28,7 @@ var handlers = {
     },
 
     'MyIntent': function () {
-        this.emit(':tell', 'Hello World!');
+        this.emit(':tell', 'Hello World from Alexa');
     }
 };
 
