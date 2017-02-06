@@ -1,4 +1,4 @@
-var https = require('http');
+var https = require('https');
 
 module.exports = {
 
@@ -14,7 +14,7 @@ module.exports = {
         var post_data = {"usstate": myState};
 
         var post_options = {
-            host:  'rmwum5l4zc.execute-api.us-east-1.amazonaws.com',
+            host:  'cp6gckjt97.execute-api.us-east-1.amazonaws.com',
             port: '443',
             path: '/prod/stateresource',
             method: 'POST',
@@ -23,6 +23,8 @@ module.exports = {
                 'Content-Length': Buffer.byteLength(JSON.stringify(post_data))
             }
         };
+        console.log('about to POST!');
+
         var post_req = https.request(post_options, res => {
             res.setEncoding('utf8');
             var returnData = "";
@@ -30,10 +32,12 @@ module.exports = {
                 returnData += chunk;
             });
             res.on('end', () => {
-                // this particular API returns a JSON structure:
-                // returnData: {"usstate":"Delaware","attributes":[{"population":900000},{"rank":45}]}
+                // this API returns a JSON structure
+                console.log('POSTED');
+                console.log(returnData);
+                console.log('');
 
-                population = JSON.parse(returnData).attributes[0].population;
+                population = JSON.parse(returnData).population;
 
                 callback(population);
 
@@ -55,9 +59,9 @@ module.exports = {
 
         var options = {
 
-            host: 'sample-env-1.esjj53b7ff.us-west-2.elasticbeanstalk.com',
-            port: 80,
-            path: '/accounts',
+            host: 'cp6gckjt97.execute-api.us-east-1.amazonaws.com',
+            port: 443,
+            path: '/prod/stateresource?usstate=' + encodeURI(myState),
             method: 'GET'
         };
         console.log("options");
@@ -73,17 +77,14 @@ module.exports = {
             });
 
             res.on('end',  () => {
-                //console.log("in end");
 
-                //console.log(JSON.stringify(returnData));
+                console.log(JSON.stringify(returnData));
                 var retdata = JSON.parse(returnData);
-                //console.log(retdata.accounts.deposit.accountSummary[0].availableBalancePvtEncrypt);
 
-                // this particular API returns a JSON structure:
-                // returnData: {"usstate":"Delaware","attributes":[{"population":900000},{"rank":45}]}
+                // this  API returns a JSON structure:
 
-                population = retdata.accounts.deposit.accountSummary[0].availableBalancePvtEncrypt;
-                //console.log("I GETTED " + population);
+                population = retdata.population;
+
 
                 callback(population);
 

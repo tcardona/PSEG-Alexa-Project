@@ -32,11 +32,10 @@ var handlers = {
 
         var that = this;
 
-        // getPopFromArray(myState, pop => {
-        // CallAPIs.getPopMock(myState, pop => {
-        // CallAPIs.getPopFromArray(myState, pop => {
 
-        CallAPIs.getPopFromAPI_GET(myState, pop => {
+         // CallAPIs.getPopMock(myState, pop => {
+        // CallAPIs.getPopFromArray(myState, pop => {
+        CallAPIs.getPopFromAPI_POST(myState, pop => {
 
             say = 'The population of ' + myState + ' is ' + pop;
 
