@@ -1,0 +1,31 @@
+{
+  "intents":[
+    {
+      "intent":"GetWeatherIntent",
+      "slots":[
+        {
+          "name":"city",
+          "type":"AMAZON.US_CITY"
+        }
+        ]
+      },
+    {
+      "intent":"GetPopulationIntent",
+      "slots":[
+        {
+          "name":"city",
+          "type":"AMAZON.US_CITY"
+        }
+      ]
+    },
+    {
+      "intent":"anythingIntent",
+      "slots":[
+        {
+          "name":"city",
+          "type":"AMAZON.US_CITY"
+        }
+      ]
+    }
+  ]
+}
