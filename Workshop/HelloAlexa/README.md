@@ -68,6 +68,10 @@ After this, you’ll have a good basic understanding of creating new skills for 
 
 <hr />
 
+- Intro to Alexa (what is Alexa, ASK, AVS, Smart Home)
+- Setting up your Alexa development environment - install node.js, npm etc.
+- 
+
 
 
 Back to the [Workshop Page](../README.md#title)
