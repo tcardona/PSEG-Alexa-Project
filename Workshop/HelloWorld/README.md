@@ -108,6 +108,8 @@ Your Intent should look like this:
     }
 ```
 
+Also add the following line to your Sample Utterances:  ```MyNameIsIntent my name is {firstname}```
+
  * Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
 
 ```var myName = this.event.request.intent.slots.firstname.value;```
