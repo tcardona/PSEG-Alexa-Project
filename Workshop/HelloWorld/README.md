@@ -129,5 +129,12 @@ There is a three second pause here <break time="3s"/>  then the speech continues
 <audio src='https://s3.amazonaws.com/my-ssml-samples/this_is_what_you_came_for.mp3' />
 ```
 
+## Lab 4
+
+Using the **alexa-sdk**
+1. Search the internet for ```npm alexa-sdk```
+1. Read the documentation and try out the code snippets in your skill.
+
+
 
 Back to the [Workshop Folder](../README.md#title) - [Cookbook Home Page](../../README.md#title)
