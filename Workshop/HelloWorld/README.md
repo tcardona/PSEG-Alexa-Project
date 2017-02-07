@@ -114,6 +114,10 @@ Your Intent should look like this:
 
  * Repeat the name back to the user as part of the Stop Intent message.
 
+ For example, you could have the AMAZON.StopIntent handler do this :
+
+ ``` this.emit(':tell', 'goodbye, ' + myName, 'try again');  ```
+
 
 ## Lab 3
 
