@@ -110,7 +110,7 @@ Your Intent should look like this:
 
  * Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
 
-```var myName = event.request.intent.slots.firstname.value;```
+```var myName = this.event.request.intent.slots.firstname.value;```
 
  * Repeat the name back to the user as part of the Stop Intent message.
 
