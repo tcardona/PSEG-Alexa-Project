@@ -120,13 +120,14 @@ Your Intent should look like this:
 Add short MP3 audio clips to your output via SSML.
 Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
 
-
- There is a three second pause here <break time="3s"/>  then the speech continues.
+Examples:
+```
+There is a three second pause here <break time="3s"/>  then the speech continues.
 
 <audio src='https://s3.amazonaws.com/my-ssml-samples/Flourish.mp3' />
 <audio src='https://s3.amazonaws.com/my-ssml-samples/cheap_thrills.mp3' />
 <audio src='https://s3.amazonaws.com/my-ssml-samples/this_is_what_you_came_for.mp3' />
-
+```
 
 
 Back to the [Workshop Folder](../README.md#title) - [Cookbook Home Page](../../README.md#title)
