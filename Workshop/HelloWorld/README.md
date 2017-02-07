@@ -112,11 +112,11 @@ Your Intent should look like this:
 
 ```var myName = this.event.request.intent.slots.firstname.value;```
 
- * Repeat the name back to the user as part of the Stop Intent message.
+ * Repeat the name back to the user as part of the MyNameIsIntent handler.
 
- For example, you could have the AMAZON.StopIntent handler do this :
+ For example, you could have the MyNameIsIntent handler do this :
 
- ``` this.emit(':tell', 'goodbye, ' + myName, 'try again');  ```
+ ``` this.emit(':ask', 'hello, ' + myName, 'try again');  ```
 
 
 ## Lab 3
