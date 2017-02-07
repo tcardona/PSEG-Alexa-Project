@@ -94,7 +94,7 @@ Feel free to add additional intents and handlers to make your skill unique.
 
 This lab will have you add Intents with Slots.
 
-1. Add a new Intent such as MyNameIsIntent.  Define a slot with the intent.
+ * Add a new Intent such as MyNameIsIntent.  Define a slot with the intent.
 Your Intent should look like this:
 ```
 {
@@ -108,11 +108,11 @@ Your Intent should look like this:
     }
 ```
 
-2. Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
+ * Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
 
 ```var myName = event.request.intent.slots.firstname.value;```
 
-3.  Repeat the name back to the user as part of the Stop Intent message.
+ * Repeat the name back to the user as part of the Stop Intent message.
 
 
 ## Lab 3
