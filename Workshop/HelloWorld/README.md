@@ -12,8 +12,8 @@
 ### Tutorial Steps
 #### Code
 1. Login to AWS and verify the region at the top right is set to the **N. Virginia** Region (not Oregon)
-1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**
-1. Choose the ```alexa-skill-kit-sdk-factskill``` skill template (hint: search for **fact** )
+1. Click [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/) and then **Create a Lambda function**  Do not select the default **Blank** blueprint.
+1. Locate and click on the ```alexa-skill-kit-sdk-factskill``` skill template (hint: search for **fact** )
 1. Click in the empty square and choose the trigger *Alexa Skills Kit* and click Next.
 1. Give your function the name *HelloWorld*
 1. Paste in the source code from [src/index.js](./src/index.js) :
@@ -77,14 +77,16 @@ Next, we will add a handler to the AWS Lambda function
 
 1. Within the [AWS Lambda Console](https://console.aws.amazon.com/lambda/home) console, review your function code
 1. Within the handlers section, notice the three lines of code that handle the MyIntent event.
-1. Create a new handler for the WhatsUpIntent (hint: copy & paste the MyIntent block and change MyIntent to WhatsUpIntent)
+1. Create a new handler function for the WhatsUpIntent (hint: copy & paste the MyIntent function and change MyIntent to WhatsUpIntent)
 1. Customize the message Alexa will say
-1. Change the emit from a ```:tell``` to an ```:ask```.  This :ask will keep the session open.
+1. Change the emit from a ```:tell``` to an ```:ask```.  This :ask will keep the session open after Alexa responds.
 1. Test your new skill by opening the skill and saying "what is up"
 
 Finally, we will add handlers for default requests such as Help, Stop, and Cancel
 
-1. Within the Lambda code, add handlers for the remaining events listed in your Intent Schema
+1. Within the Lambda code, add handlers for the following events:
+ + AMAZON.HelpIntent AMAZON.StopIntent AMAZON.CancelIntent.
+
 1. Customize the message in each handler
 1. Ensure the Help handler action is ```:ask```, while the Cancel and Stop handlers are ```:tell```.
 
@@ -102,7 +104,7 @@ Your Intent should look like this:
       "slots":[
         {
           "name":"firstname",
-          "type":"AMAZON.US_FIRST_NAME"
+          "type":"AMAZON.UK_FIRST_NAME"
         }
       ]
     }
@@ -125,7 +127,12 @@ Also add the following line to your Sample Utterances:  ```MyNameIsIntent my nam
 ## Lab 3
 
 Add short MP3 audio clips to your output via SSML.
+
 Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
+
+SSML markup tags can be interspersed directly within normal speech output text.
+
+You can test these within the **Voice Simulator** textbox, just above the Service Simulator textbox on the skill test page.
 
 
 Examples:
