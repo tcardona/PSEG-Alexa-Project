@@ -6,9 +6,33 @@
 Install the State Pop skill, which will update the IOT Device Shadow on each request.
 
 
-#### Cloudformation
-Use the following Cloud Formation URL to create the necessary AWS Resources.
+#### Skill Lambda code
 
- + https://s3.amazonaws.com/alexabucket7/cloudformation/statepop.json
+Your skill can add helper functions such as the one listed in this Gist, to update the state of your IOT Thing.
+
+https://gist.github.com/robm26/abe437c9938a95f0eeb5f83cc0dffb8d
+
+A handler in your main index.js file can call this function with three key data structures from your Alexa request.
+
+```
+var config = {};  // AWS settings to be added
+var Intent = {};
+if (this.event.request.type == "IntentRequest") {
+    Intent = this.event.request.intent;
+} else {
+    Intent = {"name" : this.event.request.type };
+}
+
+var pload = {
+    "intent" : Intent,
+    "attributes" : this.event.session.attributes,
+    "say" : speechOutput
+};
+
+setShadow(pload, config, (status) => {
+                console.log("set shadow and status is " + status);
+                this.emit(':ask', say);
+            }
 
 
+```
