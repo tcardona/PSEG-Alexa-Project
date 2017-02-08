@@ -15,7 +15,11 @@ https://gist.github.com/robm26/abe437c9938a95f0eeb5f83cc0dffb8d
 A handler in your main index.js file can call this function with three key data structures from your Alexa request.
 
 ```
-var config = {};  // AWS settings to be added
+var config = {};
+config.IOT_BROKER_ENDPOINT      = "bzed12345.iot.us-east-1.amazonaws.com".toLowerCase();
+config.IOT_BROKER_REGION        = "us-east-1";
+config.IOT_THING_NAME           = "waterPump";
+
 var Intent = {};
 if (this.event.request.type == "IntentRequest") {
     Intent = this.event.request.intent;
