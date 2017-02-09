@@ -153,8 +153,33 @@ For example, you could make Alexa say words and sound effects by preparing an ou
 var say = " hello <audio src='https://s3.amazonaws.com/my-ssml-samples/Flourish.mp3' /> world";
 this.emit(':ask',say, 'try again');
 ```
-
 ## Lab 4
+Your skill code can create a custom response based on the geographic region of the user, whether they are in US, GB, or DE.
+
+You can add conditional logic like this:
+
+```
+    var locale = event.request.locale
+
+    var say = "";
+
+    if (locale == 'en-GB'){
+            say = 'hiya';
+
+    } else if (locale == 'de-DE') {
+            say = 'guten tag';
+
+    } else {
+            say = 'hello';
+    }
+    this.emit(':ask', say, 'try again');
+
+```
+
+Based on Dean Bryen's post [How to Build a Multi-Language Alexa Skill](https://developer.amazon.com/blogs/post/Tx2XUAQ741IYQI4/how-to-build-a-multi-language-alexa-skill)
+
+
+## Lab 5
 
 Add DynamoDB to your skill.  Within your exports.handler, add one new line:
 
@@ -186,7 +211,7 @@ The session.attribute state is persisted in Dynamo only when your skill ends.
 The previous session.attributes is loaded again when the user starts the skill again.
 
 
-## Lab 5
+## Lab 6
 
 Using the **alexa-sdk**
 
