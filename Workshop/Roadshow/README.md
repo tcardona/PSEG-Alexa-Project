@@ -1,72 +1,52 @@
 ### Alexa Cookbook
 ## Hello Alexa - Agenda<a id="title"></a>
 
-### Rough Outline
+## Day 1
 
-- Hello Alexa 
-	- The world - it’s a changing.
-		- evolution of UI - from punch cards to voice
-		- voice will be everywhere
-	- Introducing Alexa
-		- Alexa family of devices - 1p
-		- Alexa everywhere
-		- Alexa enabled devices - 3p
-		- Smart home devices
-		- Available in US, UK, and Germany
-		- Alexa Ecosystem
-			- ASK: Build a voice enabled app - called skill that can be used on any Alexa enabled device like the Echo, Dot, Tap, and other Alexa enabled devices. 
-			- AVS
-	- Under the hood of ASK - life cycle of a skill
-		- ASR
-		- NLU
-	- Alexa App
-	- Skills store
+**9:00-12:30 - Skill Building 101**
+- Intro to Alexa Skills Kit
+- Hands-on: Build your first Alexa Skill
+- Intents and Slots
+- Using the Alexa SDK for Node.js
 
+**12:30-1:00p**
+Working Lunch
 
-After this, you’ll have a good basic understanding of creating new skills for Alexa, and will be ready to participate in exploring new frontier of voice-driven user experiences. 
+**1:00p-3:00p - Skill Building 201**
+- Session Attributes & persistence
+- VUI Design
+- Internationalization
+- Publishing your skill
+- Customizing audio output (SSML)
 
-- ASK Basic Concepts
-	- The Interaction Model - JSON schema of intents, custom slot types, sample utterances
-	- Alexa - Inputs and Outputs
-		- Input: Audio
-		- Output: Intents and Slots
-	- Your code sees only two things
-		- Intent
-		- Slot Value
-	- Quick Architecture overview - backend/front-end
-		- Intro to Lambda
-		- Intro to developer.amazon.com
-- Hello world skill
-	- test the skill 
-		- echosim.io
-		- device
-- Alexa SDK
-	- set up local dev environment - install node, alexa sdk
-	- Hello World Skill with SDK
-- Slots and slot types
-- Persistence (with session attributes) & state handling
-- Publishing and Certification
-- VUI/UX Design - tips and tricks
+**3:00-4:30p - Alexa Connected Devices**
+- Smart Home/IoT
+- Open Hacking/Demos/Questions
 
-### Other Concepts to cover:
-- Changing Alexa’s inflection with SSML
-- Images in Home cards
-- Audio streaming in skills
-- Voice & Service simulators at developer.amazon.com
-- Testing techniques
-	- Cloud Watch
-	- Test events
-- Troubleshooting
+## Day 2
 
-### Bonus: lambda-local node module
+**9:00-12:30 - Skill Building 101**
+- Intro to Alexa Skills Kit
+- Hands-on: Build your first Alexa Skill
+- Intents and Slots
+- Using the Alexa SDK for Node.js
 
-### Advanced: Account Linking
-	- Twitter/GitHub
-	- Calling APIs
-	- Dynamo DB, S3, Public APIS, SQS, Firebase, AWS IoT, Web sockets etc. (this should all be part of the advanced module)
+**12:30p-1:00p**
+Working Lunch
+
+**1:00p-4:00p - Skill Building 202**
+- Session Attributes & persistence
+- Account Linking
+- Connecting to external APIs
+- Connecting to AWS Services
+- Publishing your skill
+
+**4:00p-5:00p**
+- Pizza/beers
+- Open Hacking/Demos/Questions
 
 
-<hr />
+
 
 
 
