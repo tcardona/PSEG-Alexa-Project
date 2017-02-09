@@ -162,8 +162,7 @@ Add DynamoDB to your skill.  Within your exports.handler, add one new line:
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
 
-    // Name your Dynamo table, and from AWS IAM, Roles
-    // Attach a Dynamo policy to the default lambda_basic_execution IAM role
+
     alexa.dynamoDBTableName = 'YourTableName'; // creates new table for userid:session.attributes
 
     alexa.registerHandlers(handlers);
@@ -171,17 +170,19 @@ exports.handler = function(event, context, callback) {
 };
 ```
 
-The session.attribute state is persisted in Dynamo only when your skill ends.
+1. From within AWS Console, click on IAM, then Roles:
+1. Attach a Dynamo policy to the default ```lambda_basic_execution``` IAM role
 
-Delete your table when done testing, or review the DynamoDB pricing and runtime fees for your table:
+ * The session.attribute state is persisted in Dynamo only when your skill ends.
 
+ * Delete your table when done testing, or review the DynamoDB pricing and runtime fees per table:
  (https://console.aws.amazon.com/dynamodb/home)
 
 ## Lab 5
 
 Using the **alexa-sdk**
 
-1. Search the internet for ```npm alexa-sdk```
+1. Search the internet for ```npm alexa sdk```
 1. Read the documentation and try out the code snippets in your skill.
 
 
