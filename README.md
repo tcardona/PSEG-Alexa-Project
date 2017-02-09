@@ -16,6 +16,8 @@ First time here?  Start with the [intro steps](#intro) below.
 ### Ingredient Types <a id="toc"></a>
 
 1. [External Calls](ExternalCalls#title)
+
+
 1. [Handling Requests](HandlingResponses#title)
 1. [Handling Responses](HandlingRequests#title)
 1. [Handling Session](HandlingSessions#title)
