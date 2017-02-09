@@ -115,7 +115,7 @@ Your Intent should look like this:
 
 Also add the following line to your Sample Utterances:  ```MyNameIsIntent my name is {firstname}```
 
- * Create a handler within your AWS Lambda function that stores the firstname slot value in a local variable:
+ * Create another handler within your AWS Lambda function for MyNameIsIntent that stores the firstname slot value in a local variable:
  * Be sure this line of code exists within the scope of one of your Intent Handlers.
 
 ```var myName = this.event.request.intent.slots.firstname.value;```
@@ -155,6 +155,29 @@ this.emit(':ask',say, 'try again');
 ```
 
 ## Lab 4
+
+Add DynamoDB to your skill.  Within your exports.handler, add one new line:
+
+```
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+
+    // Name your Dynamo table, and from AWS IAM, Roles
+    // Attach a Dynamo policy to the default lambda_basic_execution IAM role
+    alexa.dynamoDBTableName = 'YourTableName'; // creates new table for userid:session.attributes
+
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
+```
+
+The session.attribute state is persisted in Dynamo only when your skill ends.
+
+Delete your table when done testing, or review the DynamoDB pricing and runtime fees for your table:
+
+ (https://console.aws.amazon.com/dynamodb/home)
+
+## Lab 5
 
 Using the **alexa-sdk**
 
