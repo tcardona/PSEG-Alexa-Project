@@ -175,8 +175,13 @@ exports.handler = function(event, context, callback) {
 
  * The session.attribute state is persisted in Dynamo only when your skill ends.
 
- * Delete your table when done testing, or review the DynamoDB pricing and runtime fees per table:
- (https://console.aws.amazon.com/dynamodb/home)
+ * Delete your table when done testing or review Dynamo provisioning and costs.
+   ** Click to [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home)
+   ** Click Tables.
+   ** Click on your new table:  **YourTableName**
+   ** From the tabs, click on Capacity
+   ** Drop the provisioned capacity to 1 & 1   (i/o per second)
+   ** 
 
 ## Lab 5
 
