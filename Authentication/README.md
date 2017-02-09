@@ -1,7 +1,6 @@
 ### Alexa Cookbook
 ## Authentication <a id="title"></a>
 <hr />
-Under construction
 
 ### Account Linking with OAuth
 
