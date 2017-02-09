@@ -8,8 +8,10 @@ Alexa skill developers can take advantage of several tools to automate and strea
 ### Code
 #### Javascript
 Here are some Amazon utilities:
+
 + [AWS CLI](https://aws.amazon.com/cli/) - A command line utility to create and manage AWS resources
 + [Automate publishing your skill code to Lambda](https://developer.amazon.com/public/community/post/Tx1UE9W1NQ0GYII/Publishing-Your-Skill-Code-to-Lambda-via-the-Command-Line-Interface) blog post
++ AWS [SDK for Javacript in the Browser](https://aws.amazon.com/sdk-for-browser/)
 
 Here are a list of **NON-AMAZON** tools and utilities that may enhance your developer experience.
 Install and use at your own risk.
@@ -32,7 +34,6 @@ You can test your skill in a number of ways.   You do not need to publish your s
 ### Resources
 
 
- + AWS [SDK for Javacript in the Browser](https://aws.amazon.com/sdk-for-browser/)
 
 See [developer.amazon.com/ask](https://developer.amazon.com/ask) for more information.
 
