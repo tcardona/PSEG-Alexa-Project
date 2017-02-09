@@ -72,9 +72,6 @@ This lab will have you extend your skill by adding new Intents.  First we will a
 1. Review the Intent Schema panel, notice the three lines that define the MyIntent schema.
 1. Create a new intent definition, similar to MyIntent called WhatsUpIntent
 1. Within the Sample Utterances box, add a sample for the new intent, such as ```WhatsUpIntent what is up```
-1. Customize the message Alexa will say
-1. Change the emit from a ```:tell``` to an ```:ask```.  This :ask will keep the session open after Alexa responds.
-1. Test your new skill by opening the skill and saying "what is up"
 
 Next, we will add a handler to the AWS Lambda function
 
