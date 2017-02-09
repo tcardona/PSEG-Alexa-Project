@@ -1,8 +1,13 @@
 
+### Alexa Cookbook
+## Handling Responses <a id="title"></a>
+<hr />
+Under construction
 
-Return List with AND or OR
-Return random from passed in array of utterances
 
-audio MP3 examples
+
+Back to the [Home Page](../README.md#title)
+
+
 
 

@@ -217,7 +217,7 @@ Using the **alexa-sdk**
 
 1. Search the internet for ```npm alexa sdk```
 1. Read the documentation and try out the code snippets in your skill.
-
+1. Add
 
 
 Back to the [Workshop Folder](../README.md#title) - [Cookbook Home Page](../../README.md#title)
