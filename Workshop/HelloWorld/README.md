@@ -129,6 +129,7 @@ Also add the following line to your Sample Utterances:  ```MyNameIsIntent my nam
 Add short MP3 audio clips to your output via SSML.
 
 Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
+You can use a tool such as "ffmpeg" or "vlc" to down-sample your existing MP3 content.  You can host the MP3s within the AWS S3 service.  Simply create a bucket, upload your files, and set the files to be public, and note file properties which contain the public URL to the file.
 
 SSML markup tags can be interspersed directly within normal speech output text.
 
@@ -195,6 +196,15 @@ Add permissions for your Lambda function to access DynamoDB:
 
 1. From within AWS Console, click on IAM, then Roles, then ```lambda_basic_execution```:
 1. Click "Attach Policy" and select a DynamoDB policy such as **AmazonDynamoDBFullAccess**
+1. Test your skill by executing a unit test from the AWS Lambda console.
+1. You may see an error such as ```"errorMessage": "Requested resource not found"```.  This is okay.
+1. Wait 60 seconds, then navigate to [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home) and click on Tables.
+1. You should see a table called ```YourTableName```.
+1. Return to the Lambda console, and test your function again.  It should now succeed.
+1. Return to DynamoDB, and click on Tables, then ```YourTableName```
+1. Click on ```Items``` and you should now see a record that has "amzn1.ask.account" in the ```userId``` column
+1. Click on this record to review the data stored for this userId.  You should see a mapAttr object that stores the state of your session.attributes.
+
 
 Note:
  * The session.attribute state is persisted in Dynamo only when your skill ends.
