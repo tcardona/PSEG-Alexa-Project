@@ -51,7 +51,8 @@
       "intents": [
         { "intent": "MyIntent" ,  "slots":[] }
       ]
-    }
+    },
+
     ```
 1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
     ```
@@ -64,7 +65,7 @@
 * Modify code within the Lambda function editor to have Alexa say something besides Hello World.
 * Test and hear Alexa say the new response.
 
-
+## Labs <a id="labs"></a>
 ## Lab 1
 This lab will have you extend your skill by adding new Intents.  First we will add the intent to the skill definition.
 
