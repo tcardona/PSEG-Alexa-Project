@@ -85,7 +85,7 @@ Next, we will add a handler to the AWS Lambda function
 Finally, we will add handlers for default requests such as Help, Stop, and Cancel
 
 1. Within the Lambda code, add handlers for the following events:
- + AMAZON.HelpIntent AMAZON.StopIntent AMAZON.CancelIntent.
+ + AMAZON.HelpIntent  AMAZON.StopIntent  AMAZON.CancelIntent
 
 1. Customize the message in each handler
 1. Ensure the Help handler action is ```:ask```, while the Cancel and Stop handlers are ```:tell```.
@@ -113,7 +113,7 @@ Your Intent should look like this:
 Also add the following line to your Sample Utterances:  ```MyNameIsIntent my name is {firstname}```
 
  * Create another handler within your AWS Lambda function for MyNameIsIntent that stores the firstname slot value in a local variable:
- * Be sure this line of code exists within the scope of one of your Intent Handlers.
+ * Be sure this line of code exists *inside* the scope of this new Intent Handler.
 
 ```var myName = this.event.request.intent.slots.firstname.value;```
 
@@ -128,12 +128,10 @@ Also add the following line to your Sample Utterances:  ```MyNameIsIntent my nam
 
 Add short MP3 audio clips to your output via SSML.
 
-Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
-You can use a tool such as "ffmpeg" or "vlc" to down-sample your existing MP3 content.  You can host the MP3s within the AWS S3 service.  Simply create a bucket, upload your files, and set the files to be public, and note file properties which contain the public URL to the file.
 
 SSML markup tags can be interspersed directly within normal speech output text.
 
-You can test these within the **Voice Simulator** textbox, just above the Service Simulator textbox on the skill test page.
+You can test these within the **Voice Simulator** textbox, just above the Service Simulator textbox on the skill TEST page.
 
 
 Examples:
@@ -151,13 +149,18 @@ For example, you could make Alexa say words and sound effects by preparing an ou
 var say = " hello <audio src='https://s3.amazonaws.com/my-ssml-samples/Flourish.mp3' /> world";
 this.emit(':ask',say, 'try again');
 ```
+
+Read the [documentation page](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#audio) on how to prepare and host MP3 audio clips in the required format.
+You can use a tool such as "ffmpeg" or "vlc" to down-sample your existing MP3 content.  You can host the MP3s on your own website, or within the AWS S3 service.  Simply create an S3 bucket, upload your files, and set the files to be public, and note file properties which contain the public URL to the file.
+
+
 ## Lab 4
 Your skill code can create a custom response based on the geographic region of the user, whether they are in US, GB, or DE.
 
 You can add conditional logic like this:
 
 ```
-    var locale = event.request.locale
+    var locale = this.event.request.locale;
 
     var say = "";
 
@@ -176,8 +179,30 @@ You can add conditional logic like this:
 
 Based on Dean Bryen's post [How to Build a Multi-Language Alexa Skill](https://developer.amazon.com/blogs/post/Tx2XUAQ741IYQI4/how-to-build-a-multi-language-alexa-skill)
 
-
 ## Lab 5
+Add session attributes to your skill to remember things.
+
+Based on your work in Lab 2, your lambda function now has a MyNameIsIntent handler.
+
+Add the following line of code after you have retrieved the firstname slot value into the myName variable:
+
+```this.attributes['name'] = myName;```
+
+Now, locate the handler for the AMAZON.StopIntent that you defined in Lab 1.
+Within this handler, replace the code with the following:
+
+```
+var myName = '';
+if (this.attributes['name']) {
+    myName = this.attributes['name'];
+};
+this.emit(':tell', 'goodbye, ' + myName, 'try again');
+
+```
+
+Test your skill.  Say "my name is sam".  Then say "stop".  You should hear a personalized goodbye message.
+
+## Lab 6
 
 Add DynamoDB to your skill.  Within your exports.handler, add one new line:
 
@@ -211,12 +236,13 @@ Note:
  * The previous session.attributes is loaded again when the user starts the skill again.
  * The first 25GB of data stored in DynamoDB is always free.
 
-## Lab 6
+## Lab 7
 
 Using the **alexa-sdk**
 
 1. Search the internet for ```npm alexa sdk```
-1. Read the documentation and try out the code snippets in your skill.
+1. Click the first link to open the alexa-sdk node module project page
+1. Read and scroll through the documentation and try out the code snippets in your skill.
 
 
 
