@@ -95,9 +95,14 @@ Feel free to add additional intents and handlers to make your skill unique.
 ## Lab 2
 
 This lab will have you add Intents with Slots.
+Click to your skill's Interaction Model, Intent Schema box.
+Review your existing Intent Schema.  The final two characters in this JSON are ```] }```
+Click your cursor just before these two characters.  Type a comma, then press Enter three times.
 
- * Add a new Intent such as MyNameIsIntent.  Define a slot with the intent.
-Your Intent should look like this:
+We will add a new Intent called MyNameIsIntent; and define a slot with the intent.
+
+Copy and paste in the following new Intent definition:
+
 ```
 {
       "intent": "MyNameIsIntent",
