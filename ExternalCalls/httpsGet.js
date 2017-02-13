@@ -1,5 +1,6 @@
 var https = require('https');
 // https is a default part of Node.JS.  Read the developer doc:  https://nodejs.org/api/https.html
+// try other APIs such as the current bitcoin price : https://btc-e.com/api/2/btc_usd/ticker  returns ticker.last
 
 
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
         // GET is a web service request that is fully defined by a URL string
         // Try GET in your browser:
         // https://rmwum5l4zc.execute-api.us-east-1.amazonaws.com/prod/stateresource?usstate=Virginia
+
 
         var result = 0;
 
