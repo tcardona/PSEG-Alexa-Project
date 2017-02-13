@@ -104,7 +104,7 @@ We will add a new Intent called MyNameIsIntent; and define a slot with the inten
 Copy and paste in the following new Intent definition:
 
 ```
-{
+    {
       "intent": "MyNameIsIntent",
       "slots":[
         {
