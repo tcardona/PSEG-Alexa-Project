@@ -191,22 +191,15 @@ exports.handler = function(event, context, callback) {
     alexa.execute();
 };
 ```
+Add permissions for your Lambda function to access DynamoDB:
 
-1. From within AWS Console, click on IAM, then Roles:
-1. Attach a Dynamo policy to the default ```lambda_basic_execution``` IAM role
-1. Delete your table when done testing or review Dynamo provisioning and costs:
-
-> * Click to [AWS DynamoDB](https://console.aws.amazon.com/dynamodb/home)
-> * Click Tables.
-> * Click on your new table:  **YourTableName**
-> * From the tabs, click on Capacity
-> * Drop the provisioned capacity to 1 & 1   (i/o per second)
-
+1. From within AWS Console, click on IAM, then Roles, then ```lambda_basic_execution```:
+1. Click "Attach Policy" and select a DynamoDB policy such as **AmazonDynamoDBFullAccess**
 
 Note:
-The session.attribute state is persisted in Dynamo only when your skill ends.
-The previous session.attributes is loaded again when the user starts the skill again.
-
+ * The session.attribute state is persisted in Dynamo only when your skill ends.
+ * The previous session.attributes is loaded again when the user starts the skill again.
+ * The first 25GB of data stored in DynamoDB is always free.
 
 ## Lab 6
 
@@ -214,7 +207,7 @@ Using the **alexa-sdk**
 
 1. Search the internet for ```npm alexa sdk```
 1. Read the documentation and try out the code snippets in your skill.
-1. Add
+
 
 
 Back to the [Workshop Folder](../README.md#title) - [Cookbook Home Page](../../README.md#title)

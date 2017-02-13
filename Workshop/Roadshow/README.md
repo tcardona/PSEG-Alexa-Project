@@ -46,6 +46,8 @@ Working Lunch
 - Open Hacking/Demos/Questions
 
 
+http://www.slideshare.net/AmazonWebServices/alexa-bootcamp-skill-building-101?qid=03b7ea5b-e214-49f5-b08b-539bc084f993&v=&b=&from_search=1
+
 
 
 
