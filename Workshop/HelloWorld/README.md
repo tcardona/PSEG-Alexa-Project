@@ -213,7 +213,7 @@ Within this handler, replace the code with the following:
 var myName = '';
 if (this.attributes['name']) {
     myName = this.attributes['name'];
-};
+}
 this.emit(':tell', 'goodbye, ' + myName, 'try again');
 
 ```
