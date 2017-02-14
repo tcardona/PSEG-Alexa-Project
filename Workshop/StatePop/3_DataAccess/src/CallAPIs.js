@@ -48,7 +48,7 @@ module.exports = {
     getPopFromAPI_GET: (myState, callback) => {
 
         // try GET in your browser:
-        // https://rmwum5l4zc.execute-api.us-east-1.amazonaws.com/prod/stateresource?usstate=Virginia
+        // https://cp6gckjt97.execute-api.us-east-1.amazonaws.com/prod/stateresource?usstate=Virginia
 
         var population = 0;
         var rank = 0;

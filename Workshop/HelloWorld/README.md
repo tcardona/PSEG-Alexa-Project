@@ -255,6 +255,23 @@ Note:
  * The first 25GB of data stored in DynamoDB is always free.
 
 ## Lab 7
+Controlling IOT Devices
+
+ * Review the blog post about [Alexa & IOT](https://developer.amazon.com/blogs/post/Tx3828JHC7O9GZ9/Using-Alexa-Skills-Kit-and-AWS-IoT-to-Voice-Control-Connected-Devices)
+
+Following the blog post, setup a virtual device called waterPump, and build a skill to turn the pump desired state to 1 or 0 based on a slot value.
+
+## Lab 8
+Account Linking allows your users to enable your skill, and then enter their credentials to your existing website or directory.
+This is how Uber and Domino's Pizza links an Alexa user to a user within their service.  The skill can gain access to user attributes, and the skill can make authenticated calls into the service using an OAuth token that is automatically kept for the user with their enabled skill.
+
+Account linking is required as a component of a Smart Home skill.
+
+ * Review the blog post about Account Linking: [Linking your Skill with LWA in Five Steps](https://developer.amazon.com/blogs/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit)
+
+Setup Account Linking to "Login with Amazon" as in the blog post.  Welcome the user by saying their full name.
+
+## Lab 9
 
 Using the **alexa-sdk**
 
