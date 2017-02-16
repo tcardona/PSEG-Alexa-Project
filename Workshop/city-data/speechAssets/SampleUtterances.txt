@@ -1,4 +1,7 @@
-GetWeatherIntent what's the weather in {city}
-GetPopulationIntent what's the population in {city}
+GetWeatherIntent what is the weather in {city}
+GetWeatherIntent what is the weather there
+
+GetPopulationIntent what is the population in {city}
+GetPopulationIntent what is the population there
 
 anythingIntent {city}
