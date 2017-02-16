@@ -3,7 +3,7 @@ var Alexa = require('alexa-sdk');
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
 
-    alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
+    // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
 
     // alexa.dynamoDBTableName = 'YourTableNameUK'; // creates new table for session.attributes
 
