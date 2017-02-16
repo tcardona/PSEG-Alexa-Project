@@ -8,7 +8,7 @@ var event =
         "session": {
             "sessionId": "SessionId.f9e6dcbb-b7da-4b47-905c.etc.etc",
             "application": {
-                "applicationId": "amzn1.echo-sdk-ams.app.[unique-value-here]"
+                "applicationId": "amzn1.echo-sdk-ams.app.1234"
             },
             "attributes": {},
             "user": {

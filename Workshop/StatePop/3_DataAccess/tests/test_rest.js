@@ -9,7 +9,7 @@ var post_data =
 };
 
 var post_options = {
-    host:  'rmwum5l4zc.execute-api.us-east-1.amazonaws.com',
+    host:  'cp6gckjt97.execute-api.us-east-1.amazonaws.com',
     port: '443',
     path: '/prod/stateresource',
     method: 'POST',
@@ -28,7 +28,7 @@ var post_req = https.request(post_options, function(res) {
     res.on('end', function () {
         console.log('returnData: ' + returnData);
 
-        console.log(JSON.parse(returnData).attributes[0].population);
+        console.log(JSON.parse(returnData).population);
 
     });
 
