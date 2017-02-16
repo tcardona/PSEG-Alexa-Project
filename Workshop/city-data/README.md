@@ -6,7 +6,7 @@
 By following the Hello World tutorial, you have seen how Alexa skills can set and get session attributes using the alexa-sdk.
 
 We will build a new skill called City Data, that uses the session attributes to allow a user to ask a follow up question that uses a **pronoun** to refer to the city previously mentioned.
-This use of a pronoun is also called an (Anaphora)[https://en.wikipedia.org/wiki/Anaphora_%28linguistics%29].
+This use of a pronoun is also called an [Anaphora](https://en.wikipedia.org/wiki/Anaphora_%28linguistics%29).
 
 ### Sample Utterances
 The sample utterances show how a user may perform a dialog like this:
@@ -17,6 +17,10 @@ The sample utterances show how a user may perform a dialog like this:
 
 
 Build and test this skill using the skill language model from the speechAssets folder, and the Lambda source from the src folder.
+
+Notice how the index.js includes a set of functions grouped together as the handler object.
+The function ```validateCityRequested``` will check to see if the city has been entered in a slot value, else it will check the session attributes.
+
 
 ```
 GetWeatherIntent what's the weather in {city}
