@@ -8,10 +8,17 @@ Welcome!
 These folders contain short code samples that show you how to add features to an Alexa Skill.
 Let's assume we are a chef, with an idea for a fancy new recipe.
 The recipe will require one or more ingredients to be combined to create the finished product.
-Alexa skills follow the same model. Basic ingredients can be added together to create a robust skill.  This guide is a
+Alexa skills follow the same model. Basic ingredients can be added together to create a robust skill.
+This Cookbook is a desk reference for other Alexa Skill design materials.
 
 
-First time here?  Start with the [intro steps](#intro) below.
+
+
+Attending an Alexa Workshop?
+1. Register via links on [bit.ly/alexaquickstart](https://bit.ly/alexaquickstart)
+1. Follow as the instructor builds the Space Facts skill.
+1. Try your own skills via the [LABS](Workshop/HelloWorld)
+
 
 ### Ingredient Types <a id="toc"></a>
 

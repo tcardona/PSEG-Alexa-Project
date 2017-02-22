@@ -1,8 +1,6 @@
 var CallAPIs = require("../src/CallAPIs");
 
-var myState = "Kentucky";
-this.cat = "pounce";
-this.dog = "spot";
+var myState = "Michigan";
 
 
 CallAPIs.getPopFromAPI_POST(myState,  pop => {

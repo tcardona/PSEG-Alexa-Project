@@ -12,6 +12,5 @@ MyhttpsGet.getPopFromAPI_GET(myRequest,  myResult => {
         console.log("sent     : " + myRequest);
         console.log("received : " + myResult);
 
-
     }
 );
