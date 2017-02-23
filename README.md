@@ -3,6 +3,8 @@
 ## Ingredients <a id="title"></a>
 <hr />
 
+![ASK](Cookbook/Workshop/alexa_sm.png)
+
 Welcome!
 
 These folders contain short code samples that show you how to add features to an Alexa Skill.
