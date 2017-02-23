@@ -15,25 +15,14 @@ This Cookbook is a desk reference for other Alexa Skill design materials.
 Attending an Alexa Workshop?
 
 1. Register via links on [bit.ly/alexaquickstart](https://bit.ly/alexaquickstart)
-1. Follow as the instructor builds the Space Facts skill.
-1. Try your own skills via the [HLABS](Workshop/HelloWorld)
-
-
-### Ingredient Types <a id="toc"></a>
-
-1. [External Calls](ExternalCalls#title)
-
-
-1. [Handling Requests](HandlingResponses#title)
-1. [Handling Responses](HandlingRequests#title)
-1. [Handling Session](HandlingSessions#title)
-1. [VUI Design Patterns](Workshop/VUIDesignPatterns#title)
-1. [ControllingScreens](ControllingScreens#title)
-1. [Authentication](Authentication#title)
-1. [Analytics](Analytics#title)
+1. Follow along as the instructor builds the Space Facts skill, or [install it yourself](https://github.com/alexa/skill-sample-nodejs-fact) via the README instructions.
+1. Follow the [HelloWorld tutorial](Workshop/HelloWorld).
+1. Feel free to add your own Intents & Handlers to make your skill unique.
 
 
 ### Intro <a id="intro"></a>
+
+Within the ```Tutorials``` folder above, open a tutorial and learn how to deploy and customize a new skill.
 
 
 ##### Pre-requisites
@@ -42,7 +31,7 @@ Required:
 
 Recommended:
 * Some experience with Javascript or Python programming.
-* Have [Node.JS](https://nodejs.org/en/) on your laptop and become familiar with [NPM](https://www.npmjs.com), the Node Package Manager.
+* Have [Node.JS](https://nodejs.org/en/) on your laptop command-line, and become familiar with [NPM](https://www.npmjs.com), the Node Package Manager.
 * Have [GIT](https://git-scm.com/downloads) on your laptop.
 * Review the [alexa-sdk](https://www.npmjs.com/package/alexa-sdk) documentation.
 

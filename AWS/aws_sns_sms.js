@@ -55,7 +55,7 @@ exports.handler = (event, context, callback) => {
     const payload = JSON.stringify(event);
     const params = {
         PhoneNumber: PHONE_NUMBER,
-        Message: `Hello from your IoT Button ${event.serialNumber}. Here is the full event: ${payload}.`,
+        Message: `Hello from your Alexa Skill ${event.serialNumber}. Here is the full event: ${payload}.`,
     };
 
     console.log('testing from Minnesota');
