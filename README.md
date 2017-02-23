@@ -3,7 +3,7 @@
 ## Ingredients <a id="title"></a>
 <hr />
 
-![ASK](Cookbook/Workshop/alexa_sm.png)
+![ASK](Workshop/alexa_sm.png)
 
 Welcome!
 
