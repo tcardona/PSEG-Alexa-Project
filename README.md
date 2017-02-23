@@ -12,12 +12,11 @@ Alexa skills follow the same model. Basic ingredients can be added together to c
 This Cookbook is a desk reference for other Alexa Skill design materials.
 
 
-
-
 Attending an Alexa Workshop?
+
 1. Register via links on [bit.ly/alexaquickstart](https://bit.ly/alexaquickstart)
 1. Follow as the instructor builds the Space Facts skill.
-1. Try your own skills via the [LABS](Workshop/HelloWorld)
+1. Try your own skills via the [HLABS](Workshop/HelloWorld)
 
 
 ### Ingredient Types <a id="toc"></a>
