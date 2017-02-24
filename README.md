@@ -5,9 +5,8 @@
 
 ![ASK](Workshop/alexa_sm.png)
 
-### Intro <a id="intro"></a>
+#### Welcome! <a id="intro"></a>
 
-Welcome!
 
 These folders contain short code samples that show you how to add features to an Alexa Skill.
 Let's assume we are a chef, with an idea for a fancy new recipe.
