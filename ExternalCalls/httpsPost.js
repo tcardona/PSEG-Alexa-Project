@@ -15,7 +15,7 @@ module.exports = {
         var post_data = {"usstate": myData};
 
         var post_options = {
-            host:  'rmwum5l4zc.execute-api.us-east-1.amazonaws.com',
+            host:  'cp6gckjt97.execute-api.us-east-1.amazonaws.com',
             port: '443',
             path: '/prod/stateresource',
             method: 'POST',
@@ -32,10 +32,8 @@ module.exports = {
                 returnData += chunk;
             });
             res.on('end', () => {
-                // this particular API returns a JSON structure:
-                // returnData: {"usstate":"Delaware","attributes":[{"population":900000},{"rank":45}]}
 
-                population = JSON.parse(returnData).attributes[0].population;
+                population = JSON.parse(returnData).population;
 
                 callback(population);
 

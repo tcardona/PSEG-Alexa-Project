@@ -6,6 +6,7 @@
 These tests show you how you can create tests to execute the functions that make external calls, outside of the Alexa Skills context.
 Verify you have node.js available locally by opening a command prompt and typing ```node --version```
 
+
 ### Testing your functions
 Run a test, such as the mock test, by typing:
 ``` node TestmockGet.js```
@@ -28,57 +29,27 @@ MymockGet.mockGet(myRequest,  myResult => {
 
 ```
 
+
 ```
 sent     : Florida
 received : 5000
 ```
 
 Once you have the mock function working, it will be easy to swap it out for the actual web service functions.
+### Test HTTPS calls
 
-### Customizing Functions
+``` node TesthttpsGet.js```
 
+### Install Node modules locally
+Lambda code running within the AWS Lambda service has access to two SDKs: ```alexa-sdk``` and ```aws-sdk```.
+If you would like to test locally, you can install these modules directly into your test folder:
 
+1. In a command prompt, navigate to the folder with your source code files.
+1. Type ```npm install --save alexa-sdk```
+1. Type ```npm install --save aws-sdk```
 
-### Test Skill
-
-Another way to test the functions is via a sample skill called State Pop.
-The language model for State Pop expects the user to say the name of a US State, such as Florida.
-The State name can then be sent to one of the external service functions, and the state's population is returned to the calling code.
-
-
-#### Create the State Pop sample skill
-
-1. Create a new skill on the [Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list).
-1. Call your skill ```state pop``` with invocation name ```state pop```.
-1. Copy and paste the Intent Schema below into the Interaction Model page.
-
-#### Intent Schema
-
-```
-{
-  "intents": [
-  {      "intent": "StateRequestIntent"
-      "slots":[
-              {
-                "name":"usstate",
-                "type":"AMAZON.US_STATE"
-              }
-            ]
-      }
-  ]
-}
-```
-
-#### Sample Utterances
-Copy and paste the Sample Utterances into the Interaction Model page.
-```
-StateRequestIntent go to {usstate}
-StateRequestIntent tell me about {usstate}
-
-```
-
-#### Code
-Paste in the code from [index.js](index.js)
+NPM, the Node Package Manager, will find and install these modules for you.
+You should now see a new folder called ```node_modules``` and within here are all the resources for the modules.
 
 
 Back to [ExternalCalls](../README.md#title)

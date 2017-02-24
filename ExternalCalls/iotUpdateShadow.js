@@ -4,7 +4,7 @@ var aws = require('aws-sdk');
 // Full doc on aws-sdk   http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/welcome.html
 
 const config = {};
-config.IOT_BROKER_ENDPOINT      = "a2eshrcp6u0y0c.iot.us-east-1.amazonaws.com".toLowerCase();
+config.IOT_BROKER_ENDPOINT      = "a2eshrcp777777.iot.us-east-1.amazonaws.com".toLowerCase();
 config.IOT_BROKER_REGION        = "us-east-1";
 config.IOT_THING_NAME           = "waterPump";
 
