@@ -1,5 +1,5 @@
 #### Tutorials
-## Hello World - Create the Skill <a id="title"></a>
+## 2. Create the Skill <a id="title"></a>
 <hr />
 
 

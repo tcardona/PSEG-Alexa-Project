@@ -1,6 +1,5 @@
 #### Tutorials
-## Hello World - Test your skill <a id="title"></a>
-<hr />
+## 5. Test your Skill />
 
 Here is how to test your skill.
 

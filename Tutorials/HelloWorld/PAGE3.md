@@ -1,5 +1,5 @@
 #### Tutorials
-## Hello World - Create the Lambda Function <a id="title"></a>
+## 3. Create the Lambda Function <a id="title"></a>
 <hr />
 
 1. Login to AWS and verify the region at the top right is set to either **Ireland** or **N. Virginia** Region region.
@@ -30,8 +30,10 @@
     ```
 1. Just below the code editor, create or re-use an execution role, such as ```lambda_basic_execution```
 1. Click Next and create the function.
-1. Make note of the Lambda ARN, shown near the top right, such as
+1. Press the blue TEST button to begin a unit test.  Choose the event template called Alexa Start Session.
+1. Notice Lambda ARN, shown near the top right, such as
  *  ``` arn:aws:lambda:us-east-1:333304287777:function:HelloWorld ```
+
 
 #### Continue to the next step
 

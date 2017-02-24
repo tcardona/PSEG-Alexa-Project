@@ -1,5 +1,5 @@
 #### Tutorials
-## Hello World - Connect your skill to Lambda <a id="title"></a>
+## 4. Connect your skill to Lambda <a id="title"></a>
 <hr />
 
 Here is how to copy and paste your Lambda function ARN to the Skill endpoint.

@@ -1,5 +1,5 @@
 #### Tutorials
-## Hello World - Customize your skill <a id="title"></a>
+## 6. Customize your skill <a id="title"></a>
 <hr />
 
 Here is how to customize your skill.

@@ -1,15 +1,16 @@
 #### Tutorials
-## Hello World - Publish your skill <a id="title"></a>
+## 7. Publish your skill <a id="title"></a>
 <hr />
 
-Here is how to publish your skill.  When you are done with the skill Test page, click Next to go to the Publishing Information page.
-Describe and customize your skill,
-and then submit it for certification, which usually takes less than a week.
-You will receive an email from Amazon when the skill certification process is complete.
+Make your skill public so other Echo customers can benefit from your skill's unique features!
+
+When you are done with the skill Test page, click Next to go to the Publishing Information page.
+On this page you will describe and customize your skill, and then submit it for certification.
+You will receive an email from Amazon, usually within a week, when the skill certification process is complete.
 
 
 ### Familiarize yourself with existing skills
-+ Review the format for some existing skills, as shown at [amazon.com/skills](https://www.amazon.com/skills]
++ Browse some existing skills, and note how they appear within the skills list [amazon.com/skills](https://www.amazon.com/skills)
 
 ### Alexa Documentation
 Refer to the articles:
@@ -24,13 +25,13 @@ Refer to the articles:
 
 ### Common certification issues
 
-Ensure your skill responds appropriately when the user says help, stop, or cancel.
-Ensure your skill is not targeted towards children under the age of 13.
-Ensure your skill is not using IP or material owned by another entity.
+ + Ensure your skill responds appropriately when the user says help, stop, or cancel.
+ + Ensure your skill is not targeted towards children under the age of 13.
+ + Ensure your skill is not using IP or copyrighted material owned by another entity.
 
 
-
-#### Congratulations
+## Congratulations!
+You have finished all the steps to build and publish an Alexa skill.
 
 <hr />
 Back to the [Tutorials Home Page](../README.md#title)
