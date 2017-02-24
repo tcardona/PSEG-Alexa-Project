@@ -2,9 +2,35 @@
 ## Hello World - Create the Skill <a id="title"></a>
 <hr />
 
-New developers can get started with a very basic Alexa skill called Hello World.
+
+1. Login to [developer.amazon.com] and click Alexa, then Alexa Skills Kit
+1. Create a new Skill called **hello world** with invocation name ```hello world```.
+1. Paste in the [IntentSchema.json](./speechAssets/IntentSchema.json) :
+    ```
+{
+  "intents": [
+    {
+      "intent": "MyIntent",  "slots":[]
+    },
+
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
 
 
+    ```
+1. Paste in the [SampleUtterances.txt](speechAssets/SampleUtterances.txt) :
+    ```
+    MyIntent hello
+    ```
 
 #### Continue to the next step
 

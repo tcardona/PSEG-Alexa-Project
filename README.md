@@ -4,6 +4,10 @@
 <hr />
 
 ![ASK](Workshop/alexa_sm.png)
+or
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+
+
 
 Welcome!
 
@@ -20,7 +24,7 @@ Attending an Alexa Workshop?
 1. Follow along as the instructor builds the Space Facts skill, or [install it yourself](https://github.com/alexa/skill-sample-nodejs-fact) via the README instructions.
 1. Follow the [HelloWorld tutorial](Workshop/HelloWorld).
 1. Feel free to add your own Intents & Handlers to make your skill unique.
-
+1. Test your skill via [EchoSim](https://echosim.io).
 
 ### Intro <a id="intro"></a>
 
