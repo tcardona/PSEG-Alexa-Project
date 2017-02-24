@@ -3,7 +3,7 @@
 ## Ingredients <a id="title"></a>
 <hr />
 
-![ASK](Workshop/alexa_sm.png)
+![ASK](Tutorials/images/alexa_sm.png)
 
 #### Welcome! <a id="intro"></a>
 
