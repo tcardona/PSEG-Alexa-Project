@@ -2,7 +2,8 @@
 ## Hello World - Publish your skill <a id="title"></a>
 <hr />
 
-Here is how to publish your skill.  You will first describe and customize your skill,
+Here is how to publish your skill.  When you are done with the skill Test page, click Next to go to the Publishing Information page.
+Describe and customize your skill,
 and then submit it for certification, which usually takes less than a week.
 You will receive an email from Amazon when the skill certification process is complete.
 

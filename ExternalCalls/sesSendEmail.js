@@ -2,6 +2,7 @@
 // AWS SES Javascript example
 // For Alexa Skills, copy and paste the first 20 lines of code into one of your Intent Handlers
 //  Then, copy the sendMessage() function to the very end of your code, after the handlers.
+
 // You will need to grant SES permissions via IAM;
 // 1. From the AWS console, click on IAM
 // 2. Locate and click on the role you use with your Lambda functions, such as "lambda_basic_execution"
