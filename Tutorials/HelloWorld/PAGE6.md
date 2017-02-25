@@ -6,7 +6,7 @@ Here is how to customize your skill.
 
 
 #### Follow the Labs
-[LABS.md](./LABS#title)
+[LABS.md](./LABS.md#title)
 
 #### Add Intents & Handlers
 Adding new Intents in the Language Model, and Intent Handlers within your code, will allow you to respond to new types of questions and commands.
