@@ -80,6 +80,10 @@ var handlers = {
     
     'NoMoreFactsIntent': function(){
         this.emit(':tell', "Ok.");
+    },
+    
+    'PSEGguideIntent': function(){
+        this.emit(':tell', 'Welcome to the P S E G guide, how can i help you today?');
     }
 
 };
