@@ -31,6 +31,9 @@
       "intent": "NoMoreFactsIntent"
     },
     {
+      "intent": "SafeDrivingIntent"
+    },
+    {
       "slots": [
         {
           "name": "firstname",
