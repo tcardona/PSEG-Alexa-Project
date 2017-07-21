@@ -1,16 +1,5 @@
 var Alexa = require('alexa-sdk');
 
-exports.handler = function(event, context, callback) {
-    var alexa = Alexa.handler(event, context);
-
-    // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
-
-    // alexa.dynamoDBTableName = 'YourTableNameUK'; // creates new table for session.attributes
-
-    alexa.registerHandlers(handlers);
-
-    alexa.execute();
-};
 
 var ElectricSafety=[
     'One must always be cautious around live wires and large electric machines. Always assume high voltages and use caution when working near electricity.',
@@ -41,12 +30,50 @@ var GasSafety=[
     ];
     
 var SafeDriving=[
+    'Follow speed limits',
+    'Don’t text and drive',
+    'Buckle up whenever you are in a car',
+    'Practice defensive driving',
+    'Be extra careful in bad weather',
+    'Do not drive when drowsy',
+    'Do not drink or eat while driving and drive',
+    'Know the route to your destination',
+    'Check your tires for wear and damage problems',
+    'Keep your vehicle maintained.',
+    'Closely monitor other drivers and pedestrians'
+    ];
     
+var EmployeeSafety=[
+    'Be Aware Of Your Surroundings',
+    'Keep Correct Posture To Protect Your Back',
+    'Take Regular Breaks',
+    'Use Tools And Machines Properly',
+    'Keep Emergency Exits Easily Accessible',
+    'Report Unsafe Conditions To Your Supervisor',
+    'Use Mechanical Aids Whenever Possible',
+    'Stay Sober',
+    'Reduce Workplace Stress',
+    'Wear The Correct Safety Equipment',
+    'Eliminate Fire Hazards'
     ];
 
 var GasSafetyCopy=GasSafety.slice();
 var ElectricSafetyCopy=ElectricSafety.slice();
 var SafeDrivingCopy=SafeDriving.slice()
+var EmployeeSafetyCopy=EmployeeSafety.slice();
+
+
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+
+    // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
+
+    // alexa.dynamoDBTableName = 'YourTableNameUK'; // creates new table for session.attributes
+
+    alexa.registerHandlers(handlers);
+
+    alexa.execute();
+};
 
 function Tips(TipsList, y, TipsListCopy)
 {
@@ -80,10 +107,15 @@ var handlers = {
         SafeDriving=Tips(SafeDriving, q, SafeDrivingCopy);
     },
     
+    'EmployeeSafetyIntent': function(){
+        var w=this;
+        EmployeeSafety=Tips(EmployeeSafety, w, EmployeeSafetyCopy);
+    },
+    
     'MoreFactsIntent': function(){
         GasSafety=GasSafetyCopy.slice();
         ElectricSafety=ElectricSafetyCopy.slice();
-        this.emit(':tell', "Would you like to hear Gas Safety Information or Electric Safety Information?");
+        this.emit(':tell', "Would you like to hear Gas Safety Information, Electric Safety Information, Safe Driving Information, or Employee Safety Information?");
     },
     
     'NoMoreFactsIntent': function(){
