@@ -34,6 +34,9 @@
       "intent": "SafeDrivingIntent"
     },
     {
+      "intent": "EmployeeSafetyIntent"
+    },
+    {
       "slots": [
         {
           "name": "firstname",
