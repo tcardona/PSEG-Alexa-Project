@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "intent": "MyIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    },
+    {
+      "intent": "ElectricSafetyIntent"
+    },
+    {
+      "intent": "GasSafetyIntent"
+    },
+    {
+      "intent": "MoreFactsIntent"
+    },
+    {
+      "intent": "NoMoreFactsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "firstname",
+          "type": "AMAZON.GB_FIRST_NAME"
+        }
+      ],
+      "intent": "MyNameIsIntent"
+    }
+  ]
+}
