@@ -116,6 +116,8 @@ var handlers = {
     'MoreFactsIntent': function(){
         GasSafety=GasSafetyCopy.slice();
         ElectricSafety=ElectricSafetyCopy.slice();
+        SafeDriving=SafeDrivingCopy.slice();
+        EmployeeSafety=EmployeeSafety.slice();
         this.emit(':tell', "Would you like to hear Gas Safety Information, Electric Safety Information, Safe Driving Information, or Employee Safety Information?");
     },
     
