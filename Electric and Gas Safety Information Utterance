@@ -15,6 +15,16 @@ SafeDrivingIntent Give me a Safe Driving Fact
 SafeDrivingIntent How do I drive safely
 SafeDrivingIntent Can you give me advice about safe driving
 SafeDrivingIntent How do I drive safely
+EmployeeSafetyIntent Employee Safety Information
+EmployeeSafetyIntent How can I be a safe employee
+EmployeeSafetyIntent Am I a safe employee
+EmployeeSafetyIntent Give me a fact about employee safety
+EmployeeSafetyIntent Employee safety fact
+EmployeeSafetyIntent Give me an employee safety fact
+EmployeeSafetyIntent Tell me about employee safety
+EmployeeSafetyIntent What is an employee safety fact 
+EmployeeSafetyIntent What makes an employee safe
+EmployeeSafetyIntent Facts for employee safety
 MoreFactsIntent More Facts Please
 NoMoreFactsIntent No More Facts
 NoMoreFactsIntent No More Facts Please
