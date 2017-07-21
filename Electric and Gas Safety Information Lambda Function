@@ -39,10 +39,14 @@ var GasSafety=[
     'Do not chain a pet to a gas meter or piping.',
     'Do not sleep in a room with an non-vented gas or kerosene heater'
     ];
+    
+var SafeDriving=[
+    
+    ];
 
-var GasSafetyCopy=GasSafety.slice(0);
-var ElectricSafetyCopy=ElectricSafety.slice(0);
-
+var GasSafetyCopy=GasSafety.slice();
+var ElectricSafetyCopy=ElectricSafety.slice();
+var SafeDrivingCopy=SafeDriving.slice()
 
 function Tips(TipsList, y, TipsListCopy)
 {
@@ -64,12 +68,16 @@ var handlers = {
     'ElectricSafetyIntent': function(){
         var z=this;
         ElectricSafety=Tips(ElectricSafety, z, ElectricSafetyCopy);
-        Ecount++;
     },
     
     'GasSafetyIntent': function(){
         var y=this;
         GasSafety=Tips(GasSafety, y, GasSafetyCopy);
+    },
+    
+    'SafeDrivingIntent': function(){
+        var q=this;
+        SafeDriving=Tips(SafeDriving, q, SafeDrivingCopy);
     },
     
     'MoreFactsIntent': function(){
