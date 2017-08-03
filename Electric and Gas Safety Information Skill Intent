@@ -1,28 +1,10 @@
 {
   "intents": [
     {
-      "intent": "MyIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
       "intent": "AMAZON.PauseIntent"
     },
     {
       "intent": "AMAZON.ResumeIntent"
-    },
-    {
-      "intent": "ElectricSafetyIntent"
-    },
-    {
-      "intent": "GasSafetyIntent"
     },
     {
       "intent": "MoreFactsIntent"
@@ -31,19 +13,13 @@
       "intent": "NoMoreFactsIntent"
     },
     {
-      "intent": "SafeDrivingIntent"
-    },
-    {
-      "intent": "EmployeeSafetyIntent"
-    },
-    {
       "slots": [
         {
-          "name": "firstname",
-          "type": "AMAZON.GB_FIRST_NAME"
+          "name": "safetyType",
+          "type": "SAFETY_TYPE"
         }
       ],
-      "intent": "MyNameIsIntent"
+      "intent": "SafetyIntent"
     }
   ]
 }
