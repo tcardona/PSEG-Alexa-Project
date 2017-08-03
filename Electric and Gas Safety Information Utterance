@@ -1,30 +1,25 @@
-ElectricSafetyIntent Electric Safety Information
-ElectricSafetyIntent What do you know about Electric Safety
-GasSafetyIntent What do you know about Gas Safety
-ElectricSafetyIntent Can you tell me about Electric Safety
-GasSafetyIntent Can you tell me about Gas Safety
-ElectricSafetyIntent Give me an Electric Fact
-ElectricSafetyIntent Give me an Electricity Fact
-GasSafetyIntent Give me a Gas Fact
-GasSafetyIntent Give me a fact on Gas
-ElectricSafetyIntent Give me a fact on Electricity
-GasSafetyIntent Gas Safety Information
-SafeDrivingIntent Safe Driving Information
-SafeDrivingIntent Give me a fact on Safe Driving
-SafeDrivingIntent Give me a Safe Driving Fact
-SafeDrivingIntent How do I drive safely
-SafeDrivingIntent Can you give me advice about safe driving
-SafeDrivingIntent How do I drive safely
-EmployeeSafetyIntent Employee Safety Information
-EmployeeSafetyIntent How can I be a safe employee
-EmployeeSafetyIntent Am I a safe employee
-EmployeeSafetyIntent Give me a fact about employee safety
-EmployeeSafetyIntent Employee safety fact
-EmployeeSafetyIntent Give me an employee safety fact
-EmployeeSafetyIntent Tell me about employee safety
-EmployeeSafetyIntent What is an employee safety fact 
-EmployeeSafetyIntent What makes an employee safe
-EmployeeSafetyIntent Facts for employee safety
 MoreFactsIntent More Facts Please
 NoMoreFactsIntent No More Facts
 NoMoreFactsIntent No More Facts Please
+SafetyIntent Can you tell me about {safetyType} Safety
+SafetyIntent Can you give me advice about staying safe
+SafetyIntent Give me a fact about {safetyType} safety
+SafetyIntent {safetyType} safety fact
+SafetyIntent Give me a {safetyType} safety fact
+SafetyIntent Tell me about {safetyType} safety
+SafetyIntent What is a {safetyType} safety fact
+SafetyIntent Facts for {safetyType} safety
+SafetyIntent What do you know about {safetyType} Safety
+SafetyIntent Give me a fact about {safetyType} Safety
+SafetyIntent {safetyType} Safety Information
+SafetyIntent How can I practice {safetyType} safety at work
+SafetyIntent Tell me about {safetyType} safety
+SafetyIntent What is an example of {safetyType} safety
+SafetyIntent Give me an example of {safetyType} safety
+SafetyIntent What is an interesting fact about {safetyType} safety
+SafetyIntent What is a fun fact about {safetyType} safety
+SafetyIntent What can I learn about {safetyType} safety
+SafetyIntent Any cool things to know about {safetyType} safety
+SafetyIntent What kind of things do you know about {safetyType} safety
+SafetyIntent How can I improve my {safetyType} safety
+SafetyIntent What's one of your favorite {safetyType} safety facts
