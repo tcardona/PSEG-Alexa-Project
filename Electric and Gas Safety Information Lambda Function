@@ -1,11 +1,16 @@
+
+//Tim Cardona & Aidan McGourty
+//A00124307 & A00124284
+//Team Floor 15
+
 var Alexa = require('alexa-sdk');
 
-
+//the following are four seperate lists of safety facts that will be looped through
 var ElectricSafety=[
     'One must always be cautious around live wires and large electric machines. Always assume high voltages and use caution when working near electricity.',
     'When unplugging a cord, pull on the cord at the outlet rather than tug on the cord itself. This helps keep the connector damage-free',
     'Check power and extension cords regularly for frays, cracks, or kinks. These small issues could potentially create risk in any environment.',
-    'If you see a fallen electrical wire, stay away from it. Call PSEG at 1-800-436-PSEG  to report the downed wire. This call will schedule an inspection and the wire will be fixed as soon as possible.',
+    'If you see a fallen electrical wire, stay away from it. Call P. S. E. G. at 1-800-436-PSEG  to report the downed wire. This call will schedule an inspection and the wire will be fixed as soon as possible.',
     'Never stick your fingers or any object into an electrical outlet or light bulb socket. You could get shocked!',
     'Treat every power line as if it were a "live" wire and dangerous.',
     'Remember that a turned-off appliance is still connected to electricity until it is unplugged',
@@ -15,14 +20,14 @@ var ElectricSafety=[
     'Instead of using multiple splitters and surge protectors, relocate wires to evenly distribute the energy needs of your home'
     ];
 var GasSafety=[
-    'If you smell gas, open a window, leave the building and call 1-800-880-PSEG to report the problem.',
+    'If you smell gas, open a window, leave the building and call 1-800-880-P. S. E. G. to report the problem.',
     'Provide enough ventilation for gas appliances to burn correctly and make sure no air vents or chimneys are blocked.',
     'Make sure you have a carbon monoxide alarm installed and checked regularly. A simple alarm will be able to notify an entire house of a harmful gas buildup.',
     'A distinctive odor, like rotten eggs, is added to natural gas to help assist in the detection of leaks, though it should not be solely relied upon to provide warning. For more safety info, visit p s e g dot com.',
     'Ensure that your gas pipework, appliances and flues are regularly maintained. Quickly check your pipes every so often to ensure a proper system.',
     'Before you begin digging outside, make sure to call 1-800-272-1000 to make sure you don’t begin digging atop an important pipe or wire.',
     'Teach your family members or children what to do if someone smells gas. Everyone should leave the area, and someone should call 1-800-880-PSEG',
-    'Never try to locate a gas leak yourself. Get out of the area and  dial 1-800-880-PSEG',
+    'Never try to locate a gas leak yourself. Get out of the area and  dial 1-800-880-P. S. E. G.',
     'Do not cook wearing loose garments that can catch fire',
     'Do not use the kitchen range or oven as a space heater.',
     'Do not chain a pet to a gas meter or piping.',
@@ -56,21 +61,27 @@ var EmployeeSafety=[
     'Wear The Correct Safety Equipment',
     'Eliminate Fire Hazards'
     ];
+    
+//these are copies of each list that will be used to refill the lists once they have been looped through
 
 var GasSafetyCopy=GasSafety.slice();
 var ElectricSafetyCopy=ElectricSafety.slice();
-var SafeDrivingCopy=SafeDriving.slice()
+var SafeDrivingCopy=SafeDriving.slice();
 var EmployeeSafetyCopy=EmployeeSafety.slice();
 
+/*
+this is the funciton that is used to choose a random fact from the 
+list and then eliminates that fact from the list to ensure no repetitions
+*/
 function Tips(TipsList, y, TipsListCopy)
 {
-    if(TipsList.length===0)
+    if(TipsList.length===0) //this only happens if the list is empty because all other facts were looped through
     {
-        y.emit(':tell', 'I have already told you all of my Safety Tips for this, would you like to hear them again? Answer MORE FACTS PLEASE! or NO MORE FACTS.');   
+        y.emit(':ask', 'I have already told you all of my Safety Tips for this, would you like to hear them again? Answer MORE FACTS PLEASE! or NO MORE FACTS.', "I'm sorry I don't quite know what you mean, can you repeat?");
     }
-    var x = Math.random()*TipsList.length;
-    y.emit(':tell', TipsList[parseInt(x)]);
-    TipsList.splice(x,1);
+    var x = Math.floor(Math.random()*TipsList.length); //chooses a random number that will be used to choose a random index in the list
+    y.emit(':tell', TipsList[x]);
+    TipsList.splice(x,1); //eliminates the item from the list that was already stated by alexa in the previous step
     return TipsList;
 }
 
@@ -92,41 +103,57 @@ var handlers = {
     'LaunchRequest': function () {
         this.emit('PSEGInfoIntent');
     },
-    
-    'ElectricSafetyIntent': function(){
-        var z=this;
-        ElectricSafety=Tips(ElectricSafety, z, ElectricSafetyCopy);
-    },
-    
-    'GasSafetyIntent': function(){
-        var y=this;
-        GasSafety=Tips(GasSafety, y, GasSafetyCopy);
-    },
-    
-    'SafeDrivingIntent': function(){
-        var q=this;
-        SafeDriving=Tips(SafeDriving, q, SafeDrivingCopy);
-    },
-    
-    'EmployeeSafetyIntent': function(){
-        var w=this;
-        EmployeeSafety=Tips(EmployeeSafety, w, EmployeeSafetyCopy);
+      
+    'SafetyIntent': function(){
+        
+        /*
+        generalized intent that will use the function to go through the list
+        and choose a random fact to be stated and removed from the list
+        */
+        
+        
+        var b=this;
+        var safetyType=b.event.request.intent.slots.safetyType.value;
+        
+        switch(safetyType){
+            case 'electric':
+                ElectricSafety=Tips(ElectricSafety, b, ElectricSafetyCopy);
+                break;
+            case 'gas':
+                GasSafety=Tips(GasSafety, b, GasSafetyCopy);
+                break;
+            case 'driving':
+                SafeDriving=Tips(SafeDriving, b, SafeDrivingCopy);
+                break;
+            case 'employee':
+                EmployeeSafety=Tips(EmployeeSafety, b, EmployeeSafetyCopy);
+                break;
+            default:
+                b.emit(':tell', "I'm sorry, I do not know any safety tips on that subject.");
+        }
     },
     
     'MoreFactsIntent': function(){
+        /* 
+        this intent repopulates every list with the original contents after the user
+        requests more facts to be said and then asks the user again what facts they
+        would like to hear
+        */
         GasSafety=GasSafetyCopy.slice();
         ElectricSafety=ElectricSafetyCopy.slice();
         SafeDriving=SafeDrivingCopy.slice();
         EmployeeSafety=EmployeeSafety.slice();
-        this.emit(':tell', "Would you like to hear Gas Safety Information, Electric Safety Information, Safe Driving Information, or Employee Safety Information?");
+        this.emit(':tell', "Would you like to hear Gas Safety Information, Electric Safety Information, Driving Safety Information, or Employee Safety Information?");
     },
     
     'NoMoreFactsIntent': function(){
+        /* this intent leaves the safety facts lists unpopulated*/
         this.emit(':tell', "Ok.");
     },
     
-    'PSEGguideIntent': function(){
-        this.emit(':tell', 'Welcome to the P S E G guide, how can i help you today?');
+    'PSEGInfoIntent': function(){
+        /*this intent is the initial launch that explains what the Alexa Skill can do*/
+        this.emit(':ask', "Ask Alexa about Gas Safety, Electric Safety, Driving Safety, or Employee Safety Information.","I'm sorry I don't know what you mean, can you please repeat?");
     }
 
 };
